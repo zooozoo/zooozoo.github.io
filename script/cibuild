@@ -14,7 +14,7 @@ rm -rf _site
 mkdir _site
 
 # clone remote repo to "_site"
-git clone https://${GH_TOKEN}@github.com/zooozoo/zooozoo.github.io.git --branch gh-page _site
+git clone https://${GH_TOKEN}@github.com/zooozoo/zooozoo.github.io.git --branch master _site
 
 # build with Jekyll into "_site"
 bundle exec jekyll build
@@ -23,4 +23,4 @@ bundle exec jekyll build
 cd _site
 git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-git push --force origin gh-page
+git push --force origin master
