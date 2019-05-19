@@ -28,7 +28,7 @@ github_username:  jekyll
 markdown: kramdown
 remote_theme: chesterhow/tale
 
-permalink:    /:year-:month-:day/:title
+permalink: /:year-:month-:day/:title
 
 pagination:
     enabled: true
