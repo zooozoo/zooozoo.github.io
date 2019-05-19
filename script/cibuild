@@ -23,4 +23,5 @@ bundle exec jekyll build
 cd _site
 git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
+git checkout -b master gh-pages
 git push --force origin master
