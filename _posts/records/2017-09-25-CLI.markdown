@@ -1,0 +1,100 @@
+---
+category: record
+---
+## rm -r 폴더이름or파일이름
+폴더를 지울 때는 -r 옵션을 넣어야 지워진다.(폴더안에 폴더가 있으면 또 지워야 되니까 리커시브 옵션) ,
+지울껀지 물어보는데 f 옵션을 주어서 물어보지 않게 바로 지울 수 있다. `ex) rm -rf 폴더이름or파일이름`
+
+## cp 복사대상파일경로 복사할위치
+
+## 폴더안에 있는 모든 파일 복사하기
+`cp -a /source/. /dest/`
+
+## mv 기존이름 바꿀이름
+파일이동, 혹은 파일이름변경
+
+## `kill`명령어에 관해 포스팅한 블로그링크
+[http://rerethink.tistory.com/entry/%EB%A6%AC%EB%88%85%EC%8A%A4-kill](http://rerethink.tistory.com/entry/%EB%A6%AC%EB%88%85%EC%8A%A4-kill)
+
+## 실행되고 있는 모든 프로세스 확인
+`ps aux`
+
+## 실행되고 있는 프로세스 확인
+`ps -e | grep example`
+
+## 실행되고 있는 프로세스 죽이기
+`kill -9 프로세스id`
+
+## 가동되고 있는 서버 확인
+```
+ps -ax | grep runserver
+```
+
+## 서버죽이기(예시)
+```
+kill -9 21884
+```
+
+## port8000과 연결되어 있는 모든 서버를 kill한다.
+```
+sudo fuser -k 8000/tcp
+```
+
+## (zsh 사용시) 입력하고 있는 라인 전체 삭제하기
+```
+ctrl + u
+```
+
+## 가상환경 해제
+```
+pyenv local --unset
+```
+
+## 하드 용량 확인
+```
+df -h -t
+```
+`-h` 옵션은 human-readable 의 약자로 GB 혹은 MB 단위로 용량을 보여준다.
+`-t` 옵션은 파일 시스템의 종류까지 출력해 준다.
+
+## 파일이름 바꾸기
+```
+mv old-file-name new-file-name
+```
+
+## 터미널창에서 현재 있는 디렉토리 열기
+```
+nautilus .
+```
+
+## 환경변수 설정관련
+
+export 명령어를 이용해서 환경변수를 확인 및 수정할수 있다.
+`export`
+-> 환경변수 리스트를 보여준다.
+`export 변수명=변수값``
+-> 해당 변수명에 변수값을 등록한다.
+`echo $변수명``
+-> 변수명에 해당하는 환경변수값을 보여준다.
+`export 변수명=$변수명:변수값``
+-> 변수명에 변수값을 추가한다
+
+[출처](http://akaseon.tistory.com/50)
+
+## `apt-get`으로 설치한 패키지 삭제하기
+`apt-get remove packagename`
+
+패키지를 삭제하는 명령어, 하지만 해당 패키지를 설치하면서 함께 설치된 읜존관계에 있는 다른 패키지는 남아있다.
+
+`apt-get purge packagename or apt-get remove --purge packagename`
+삭제하는 패키지와 관련된 모든것을 삭제한다.
+[출처](https://askubuntu.com/questions/187888/what-is-the-correct-way-to-completely-remove-an-application)
+
+## `apt-get`으로 설치한 패키지리스트 확인하기
+`apt list --installed`
+
+## python 버전 확인 명령어
+`python -V`
+
+## pip 버전 확인 명령어
+`pip --version`

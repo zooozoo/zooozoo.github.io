@@ -1,0 +1,652 @@
+---
+category: record
+---
+## 1. css란?
+마크업 언어(html)가 실제 표시되는 방법을 기술하는 언어
+***
+## 2. css사용법
+- head안쪽 style태그 내부에 작성
+- 사용할 요소의 style속성에 정의
+- 외부 스타일 시트를 사용, link태그를 사용, href속성에 경로를 입력
+***
+#### 1.css선택자
+- html페이지 내부의 모든 요소에 같은 css속성을 적용합니다.
+- margin이나 padding값을 초기화하는 등, 기본값을 정할 때 주로 사용합니다.
+- 다만 문서의 모든 요소를 읽기 때문에 페이지 로딩시간이 길어질 수 있으니 자주 사용하는 것은 좋지 않습니다.
+
+#### 2.태그선택자
+- 해당하는 모든 html태그 요소를 지정합니다.
+
+#### 3.클래스 선택자
+ - css 에서는 마침표 기호로 나타내며, html에서는 주어진 값을 class 속성값으로 가진 요소를 선택합니다.
+ - 마침표 앞에 태그를 붙여주면 범위는 지정한 태그에 한합니다.
+ - 클래스는 쉼표로 구분하여 동시에 여러개의 값을 지정할 수있습니다.
+
+#### 4.id선택자
+- css에서는 #기호로 나타내며, html에서는 주어진 값을 id속성값으로 가진 요소를 선택합니다.
+- html에서 id값은 오직 하나만 존재해야 합니다.
+- 클래스 선택자와 같이 앞에 태그명을 입력할 수 있습니다.
+- id선택자의 우선순위가 클래스 선택자의 우선순위보다 높으므로, 같은 속성에 서로 다른 값을 지정할 경우 id선택자의 값이 적용됩니다.
+
+#### 5.체인 선택자
+- 한 요소에 아이디와 클래스들, 또는 여러 클래스가 적용되어 있을 경우에 사용합니다.
+
+#### 6.그룹 선택자
+- 여러 선택자에 같은 스타일을 적용하는 경우, 쉼표로 구분해 선택자를 나열해 사용합니다.
+
+#### 7.복합 선택자
+ex) 하위, 자식
+```
+section ul {
+border: 1px solid black;
+}-> 하위 선택자
+section > ul {
+border: 1px solid black;
+}-> 자식 선택자
+```
+- 하위 선택자는 부모요소에 포함된 '모든'하위 요소를 지정한다.
+- 자식 선택자는 부모요소의 '바로 아래'자식 요소만을 지장한다.
+
+ex)
+```
+h1 + ul {
+background: LightBlue;
+color: DarkBlue;
+}-> 인접 형제 선택자
+h1 ~ ul {
+background: LightBlue;
+color: DarkBlue;
+}-> 일반 형제 선택자
+```
+- 두 선택자 모두 형 요소에는 적용되지 않으며 동생요소만을 지정한다.
+- 차이점은 인접형제 선택자의 경우 첫 번째 동생요소만을 지정하고
+- 일반 형제 선택자는 조건을 충족하는 '모든'동생요소들을 지정합니다.
+***
+## 3. css서체
+#### 1. 서체 색상
+color 속성은 글자 색을 지정합니다.
+#### 2. 서체 지정
+```
+body {
+font-family: “돋움”, dotum, “굴림”, gulim, arial, helvetica, sans-serif;
+}
+```
+웹 페이지를 방문한 사용자가 없을 경우를 대비해, 다양한 서체들을 선언해놓습니다.
+순서대로 해당 서체가 없을 경우 다음 서체가 사용자의 컴퓨터에 설치되어 있는지 확인 후, 순서 중 가장 먼저 찾은 폰트를 사용하게 됩니다.
+#### 3. 글자 굵기
+```
+p {
+font-weight: bold;
+}
+p {
+font-weight: 700;
+}
+```
+lighter와 bolder는, 해당 서체의 Lighter또는 Bolder서체가 있어야 표현되며,
+해당하는 서체가 없을 경우 normal, bold와 동일 굵기로 나타납니다.
+#### 4. 줄 간격
+```
+p {
+line-height: 1.5;
+} -> 숫자만 입력할 경우 해당 font-size
+```
+font-size가 px로 고정되어 있다면, line-height에도 고정된 px을 사용할 수 있습니다.
+#### 5. 문자 꾸미기
+```
+p.item1 {
+text-decoration: none;
+}
+p.item2 {
+text-decoration: underline;
+}-.밑줄
+p.item3 {
+text-decoration: overline;
+}->윗줄
+p.item4 {
+text-decoration: line-through;
+}->취소선
+```
+#### 6. 문자 정렬
+```
+p.item1 {
+text-align:left;
+}
+p.item2 {
+text-align:center;
+}
+p.item3 {
+text-align:right;
+}
+p.item4 {
+text-align:justify;
+} -> 양쪽정렬
+```
+justify는 우측 끝 부분을 깔끔하게 양쪽 정렬해주지만, 줄의 내부 간격이 뒤틀리므로 잘 사용하지 않습니다.
+#### 7. 문자 들여쓰기
+```
+p {
+text-indent: 1em;
+}
+```
+#### 8. 대소문자 변환
+```
+첫 글자만 대문자로
+p.item1 {
+text-transform: capitalize;
+}
+모두 대문자로
+p.item2 {
+text-transform: uppercase;
+}
+모두 소문자로
+p.item3 {
+text-transform: lowercase;
+}
+```
+#### 9. 자간
+```
+각 글자간의 간격
+p {
+letter-spacing: 5px;
+}
+```
+#### 10. 단어 간격
+```
+p {
+word-spacing: 5px;
+}
+```
+#### 11. 요소간 수직 정렬
+박스 내에서의 수직 정렬이 아닌, 나란히 오는 인라인 요소간의 정렬
+```
+.ori {
+font-size: 20px;
+}
+.vertical-item {
+font-size: 10px;
+}
+.item1 {
+vertical-align: baseline;
+}
+.item2 {
+vertical-align: sub;
+}
+.item3 {
+vertical-align: super;
+}
+.item4 {
+vertical-align: top;
+}
+.item5 {
+vertical-align: text-top;
+}
+.item6 {
+vertical-align: bottom;
+}
+.item7 {
+vertical-align: text-bottom;
+}
+.item8 {
+vertical-align: middle;
+}
+```
+#### 12. 줄 바꿈 설정
+```
+p.item1 {
+white-space:nowrap;
+}줄 바꿈이 없습니다
+p.item2 {
+white-space:pre;
+}줄 바꿈 , 띄어쓰기 , 공백등 모든것이 보여지며 ,
+박스를 벗어나도 줄 바꿈이 일어나지 않습니다
+p.item3 {
+white-space:pre-line;
+}줄 바꿈과 띄어쓰기를 모두 보여주며
+자동으로 줄바꿈이 됩니다
+p.item4 {
+white-space:pre-wrap;
+}
+```
+***
+## 4. css 배경스타일
+#### 1. 배경색
+```
+div{
+ background-color: #eee;
+ }
+ ```
+
+#### .2. 배경 이미지
+ ```
+ div {
+background-image: url('../images/icon.png');
+}
+```
+
+#### 3. 배경 이미지 반복
+```
+div {
+background-repeat:no-repeat;
+background-repeat:repeat;
+background-repeat:repeat-x;
+background-repeat:repeat-y;
+}
+```
+가로로 반복하는 이미지의 경우, 세로로 길고 가로 1px인 이미지를 이용해 배경을 나타낼 수 있으며,
+세로반복의 경우 반대로 가로로길고 세로가 1px인 이미지를 이용해 배경을 나타낼 수 있습니다.
+#### 4. 베경 이미지 위치
+```
+div {
+background-position: 50% 16px;
+background-position: center bottom;
+}
+```
+- center 는 가운데 (x,y 모두 가능 ),left, right는 x축, top, bottom 은 y축에만 사용
+- 삽입된 이미지의 좌표를 정해줍니다.
+두 개의 값을 받으며, 각각 x축, y축의 값을 가집니다.
+각각은 양의값을 가질경우 x축은 우측, y축은 하단으로 이동합니다. (음수를 가질경우 반대로 좌측, 상단으로 이동합니다)
+left, center, right, top, bottom으로 x, y측의 0%, 100%, 가운데 값을 사용할 수 있습니다.
+#### 5. 배경 이미지 고정
+```
+div {
+background-attachment: local;
+background-attachment: scroll;
+background-attachment: fixed;
+}
+```
+local값을 가질 경우, 요소의 왼쪽 상단을 기준으로 이미지를 표현하며, 스크롤 시 이미지가 같이 움직입니다.
+scroll값을 가질 경우, 요소의 왼쪽 상단을 기준으로 이미지를 표현하며, 스크롤 시 이미지가 함께 움직이지 않고 고정됩니다.
+fixed값을 가질 경우, 요소와 관계없이 웹 페이지 전체 화면을 기준으로 이미지가 표시되며, 스크롤 시 함께 움직이지 않고 고정됩니다.
+***
+## 5. 테두리 스타일
+#### 1. 요소의 방향
+요소의 상하좌우 속성을 정의할 때, 순서는 시계방향으로 진행됩니다.
+상단부터 시계방향으로, Top -> Right -> Bottom -> Left방향으로 값을 정한다고 기억하시면 됩니다.
+#### 2. 테두리를 구성하는 요소
+```
+div {
+border-width: 3px; 상하좌우 모두 3px
+border-top-width: 4px; 상단만 4px
+border-width: 3px 4px 5px 6px;  상 우 하 좌 순서대로 3,4,5,6px
+border-width: 5px 10px; 상하 5px, 좌우 10px
+}
+```
+#### 3. 선 형태
+solid 실선
+dotted 점선
+dashed 바느질선 형태의 점선
+double 이중선
+inset 요소 전체가 안으로 들어가 보임
+groove 입체적으로 보여줌
+outset 요소 전체가 바깥으로 나와 보임
+ridge groove와 반대방향으로 선이 돌출
+#### 4. 테두리 속성 속기법
+```
+div {
+border: 1px solid red;
+}
+```
+border의 속기법은 모든 변에 동일한 값만 적용 가능합니다.
+(각 변에 다른 값을 주고 싶을 경우, 각 속성(width, style등)에 4가지 값을 입력하거나, border-top-<property>에 값을 입력해야 합니다.
+***
+## 6. 박스모델
+#### 1. 박스모델이란
+- CSS요소는 박스 형태를 이루며,
+박스는 콘텐츠, 패딩, 보더, 마진의 4가지로 이루어집니다
+#### 2. 블록 요소와 인라인 요소의 차이
+- 인라인 요소는 가로마진만 가질 수 있습니다
+- 인라인 요소의 길이/높이는 지정이 불가능합니다 (내용에 자동으로 맞추어짐)
+- 블록 요소는 가로 /세로 마진을 모두 가집니다
+#### 3. 마진겹침
+두 블록요소의 마진이 서로 겹칠 경우, 해당하는 마진값이 더해지는 것이 아니라 둘 중 큰 값만이 적용됩니다.
+(세로가 아닌 가로에서는 해당 현상이 없습니다)
+따라서 서로 위/아래로 겹치는 마진값을 준 경우, 한 쪽에만 값을 몰아주거나, padding을 활용하는 방식으로 해결해야 합니다.
+#### 4. 내부 여백(패딩)
+padding과 margin을 구분하는 가장 쉬운방법은,
+padding과 margin을 준 요소에 background-color를 지정한 후 개발자 모드에서 해당 요소가 차지하는 공간을 확인하는 것입니다.
+#### 5. box-siizng
+```
+div {
+width: 200px;
+height: 50px;
+padding: 10px;
+border: 1px solid black;
+margin: 15px;
+box-sizing: border-box;
+}
+```
+box-sizing에 border-box를 지정하면, 요소의 width값에 맞추어 padding, border값을 제외한 width가 새로 적용됩니다.
+***
+## 7. 리스트 스타일
+#### 1. 리스트 스타일 타입
+```
+ul {
+list-style-type: disc;
+list-style-type: circle;
+list-style-type: square;
+
+list-style-type: decimal;
+list-style-type: lower-alpha;
+list-style-type: upper-alpha;
+list-style-type: lower-roman;
+list-style-type: upper-roman;
+}
+```
+disc, circle, square는 Unordered List에 어울리는 속성이며,
+decimal, alpha, roman은 Ordered List에 어울리는 속성입니다.
+#### 2. 리스트 블릿에 이미지 지정
+```
+ul {
+list-style-image: url('images/mic.png');
+}
+```
+#### 3. 리스트 블릿 위치 지정
+```
+ul {
+list-style-position: inside;
+list-style-position: outside;
+}
+```
+#### 4. 리스트 스타일 속기법
+```
+ul {
+list-style: square url('images/mic.png') inside;
+}
+```
+블릿타입과 이미지 주소를 동시에 넣을 경우, 이미지를 찾지 못하면 지정한 블릿타입을 사용합니다.
+***
+## 8. 테이블 스타일
+#### 1. 테두리 합치기
+```
+table {
+border-collapse: collapse;
+}
+tr, td {
+border: 1px solid black;
+width: 30px;
+text-align: center;
+}
+```
+테이블의 셀간 공백을 합쳐서 없애는 속성입니다.
+해당속성은 오직 table요소에만 사용 가능합니다.
+#### 2. 테이블 셀 간격
+```
+table {
+border-spacing: 10px;
+}
+tr, td {
+border: 1px solid black;
+width: 30px;
+text-align: center;
+}
+```
+셀 간 간격을 지정할 때는, border-collapse가 ‘collapse’값이면 적용되지 않습니다.
+#### 3. 빈 셀의 표시
+```
+table {
+border-spacing: 10px;
+}
+tr, td {
+border: 1px solid black;
+width: 30px;
+text-align: center;
+empty-cells: hide;
+}
+```
+#### 4. 테이블 레이아웃
+- 테이블의 기본 설정은 내용이 긴 쪽이 더 늘어납니다 table-layout: auto;
+- table-layout의 속성을 fixed로 설정하면, 셀 길이가 일정하게 유지됩니다.
+(이 때, table에는 width property가 설정되어있어야 합니다)
+***
+## 9. css의 화면 표시 속성
+#### 1. 화면표시 방법
+##### 1. block
+```
+span {
+display: block;
+}
+```
+- span은 원래 인라인속성이지만 , display 프로퍼티에 block값을 받으면 블럭 속성을 지니게 됩니다
+- display 속성은 기존에 블럭 요소가 아닌 요소를 블럭 속성을 갖도록 합니다.
+##### 2. inline
+```
+div {
+display: inline;
+}
+```
+- 반대로, div 가 diplay 프로퍼티에 inline속성을 받으면 인라인 요소로 취급됩니다.
+##### 3. inline-block
+```
+span {
+display: inline-block;
+}
+```
+- 기본적으로 inline요소처럼 취급되지만, block요소와 같이 높이 및 상/하값을 가질 수 있게됩니다,
+- 인라인요소에 높이와 상/하 패딩, 마진값을 줄 때 사용합니다.
+##### 4. none
+```
+div {
+display: none;
+}
+```
+- 화면에 완전히 보이지 않게 됩니다. 해당 요소의 하위 요소들도 전부 보이지 않게 되며, 공간도 차지하지 않습니다.
+##### 5. visibility
+```
+div {
+visibility: hidden;
+visibility: visible;
+}
+```
+- display: none;은 화면에서 차지하던 공간조차도 전부 없어지며,
+visibility: hidden;은 화면에서 차지하던 공간은 그대로인채 투명해진다고 생각하시면 됩니다.
+##### 6. 화면 넘침 표시방법 (overflow)
+```
+div {
+overflow: hidden; 넘친 콘텐츠를 전부 숨깁니다
+overflow: visible; 영역 밖으로 콘텐츠가 나간 모습이 보입니다
+overflow: auto; 콘텐츠가 넘칠경우, 스크롤바가 생성됩니다
+overflow: scroll; 콘텐츠가 넘치지 않아도 항상 스크롤바가 있습니다
+}
+```
+높이가 고정되어있고, 내용이 길면 스크롤 할 부분에서는 auto를 사용합니다.
+***
+## 10.float 속성
+#### 1. float 속성
+- float를 사용하면 해당 요소를 문서의 흐름과 별개로 취급하여, 왼쪽이나 오른쪽으로 띄워줄 수 있습니다.
+- float 속성을 준 자식요소들의 가로길이가 부모요소의 가로보다 긴 경우 자동으로 다음 라인으로 나머지 자식요소가 옮겨집니다.
+ - float요소와 겹치는 경우, float속성을 해제합니다
+
+
+```
+ p {
+clear: both;
+clear: left;
+clear: right;
+}
+```
+
+***
+## 11. float 레이아웃
+#### 1. float 레이아웃 관련 팁
+float로 레이아웃을 편성할 때 float 적용된 요소의 부모요소는 height가 인식되지 않는 현상이 일어난다. 해당 현상은 after 가상선택자를 이용하여 해결하는 것을 추천
+
+```
+.float-frame::after {
+content: “ “;
+display: block;
+height: 0;
+clear: both;
+}
+```
+## 12. css포지션
+#### 1. position이란?
+요소의 위치를 지정하는 속성
+- static 기본값
+- relativ: static과 같은 순서로 배치되지만, top, right, bottom, left속성을 이용해 위치를 지정 가능
+- fixed: 바라우저 창 기준으로 위치
+- absolute: 자신과 가장 가까운 'position'이 'static'이 아닌 부모를 기준 (없을 경우 본문(body)기준)
+#### 2. 부모의 가운데로 정렬하는
+법
+```
+width: 500px;
+margin: 0 auto;
+```
+전체 크기가 정해져 있지 않을 경우, 내용의 width만 지정한 후 좌/우 여백은 auto로 같게 처리해줍니다
+#### 3. 부모의 가로/세로 가운데 정렬하는 법
+1. 부모요소의 height와 line-height의 값이 같을 경우, 내부의 요소들은 세로 가운데로 정렬됩니다
+2. 요소를 absolute포지션으로 설정한 뒤, 상단과 왼쪽에서 각각 부모의 50%만큼 이동 후 자신의 높이와 가로의 -50%만큼을 다시 위와 왼쪽으로 이동합니다. transform을 사용할 경우, 픽셀이 깨져보일 수 있음.
+ex)
+```
+position: absolute;
+width: 200px;
+height: 100px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+```
+## 13. Sass
+#### 1. Sass 란?
+CSS전처리기 (Pre-processor)
+Sass와 같은 ‘CSS확장 언어’의 파일을 웹 브라우저에서 해석할 수 있는 css파일로 만들어주는 처리기
+#### 2. Sass 출력 스타일
+* Sass 의 출력 스타일
+```
+div.container {
+  padding: 15px;
+  margin: 0;
+  > p#main-title {
+  font-size: 16px;
+  font-weight: bold;
+  }
+  > .fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  }
+}
+```
+##### 1. expanded
+```
+div.container {
+  padding: 15px;
+  margin: 0;
+}
+div.container p#main-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+div.container .fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+```
+##### 2. nested
+
+```
+div.container {
+  padding: 15px;
+  margin: 0; }
+  div.container p#main-title {
+    font-size: 16px;
+    font-weight: bold; }
+  div.container .fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px; }
+```
+##### 3. compact
+```
+div.container { padding: 15px; margin: 0; }
+div.container p#main-title { font-size: 16px; font-weight: bold; }
+div.container .fixed { position: fixed; bottom: 10px; right: 10px; }
+```
+##### 4. compressed
+```
+div.container{padding:15px;margin:0}div.container p#main-title{font-size:16px;font-
+weight:bold}div.container .fixed{position:fixed;bottom:10px;right:10px}
+```
+#### 3. 주석
+```
+//주석내용
+```
+또는
+```
+/* 주석내용 */ (CSS기본)
+```
+을 사용합니다
+#### 4. 부모 참조 선택자 (&)
+&은 자신의 부모선택자를 참조합니다
+#### 5. 선택자 상속 (@extend)
+상속을 사용하면 같은 속성에서 일부만 바뀐 요소를 쉽게 컨트롤 할 수 있습니다.
+* sass
+```
+  .btn {
+    background-color: #cdcdcd;
+    font-weight: bold;
+    color: white;
+    padding: 5px 20px;
+  }
+  .btn-ok {
+    @extend .btn;
+    background-color: #d9edf7;
+  }
+  .btn-cancel {
+    @extend .btn;
+    background-color: #bbb;
+  }
+```
+상속받은 선택자가 .btn 의 설정을 함께 공유합니다
+* css
+```
+.btn, .btn-ok, .btn-cancel {
+background-color: #cdcdcd;
+font-weight: bold;
+color: white;
+padding: 5px 20px;
+}
+.btn-ok {
+background-color: #d9edf7;
+}
+.btn-cancel {
+background-color: #bbb;
+}
+```
+#### 6.변수
+```
+$padding: 10px;
+$bg-color: #ececec;
+$title-font-weight: bold;
+
+div.container {
+  background-color: $bg-color;
+  padding: $padding;
+  margin: 0;
+  p#main-title {
+    font-size: 16px;
+    font-weight: $title-font-weight;
+  }
+  p#sub-title {
+    font-size: 14px;
+    font-weight: $title-font-weight;
+  }
+  .fixed {
+    position: fixed;
+    padding: $padding;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+```
+#### 7.sass파일 호출
+```
+@import 'variables';
+%btn {
+  background-color: $brand-primary;
+  font-weight: bold;
+  color: white;
+  padding: 5px 20px;
+}
+```
+* CSS파일을 불러올 때는 확장자를 입력하여야 하지만, Sass파일을 불러올 때는 확장자를 입력하지 않아도 됩니다.
+* _로 시작하는 파일은 CSS파일로 컴파일 되지 않습니다. import시에만 사용하는 파일은 _로 네이밍하세요
