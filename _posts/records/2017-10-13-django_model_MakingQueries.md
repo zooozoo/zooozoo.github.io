@@ -1,3 +1,6 @@
+---
+category: record
+---
 # Making Queries
 
 [장고문서](https://docs.djangoproject.com/ko/1.11/topics/db/queries/#retrieving-specific-objects-with-filters) 를 공부하며 기록한 내용입니다. 

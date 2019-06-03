@@ -1,3 +1,6 @@
+---
+category: record
+---
 # 나의 여행기 기록 SNS EXPLOG를 개발하며 기록해 놓은 자료입니다.  
 
 

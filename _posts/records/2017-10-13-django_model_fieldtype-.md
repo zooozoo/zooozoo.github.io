@@ -1,3 +1,6 @@
+---
+category: record
+---
 # Model field reference
 
 ## Field types

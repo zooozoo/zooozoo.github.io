@@ -1,7 +1,5 @@
 ---
-title: 생활코딩 web2 javascript 강의 노트
-excerpt: >-
- w3c javascript를 본 후 생활코딩 javascript강의를 모두 공부하며 남긴 기록입니다.
+category: record
 ---
 
 # 수업을 시작하며

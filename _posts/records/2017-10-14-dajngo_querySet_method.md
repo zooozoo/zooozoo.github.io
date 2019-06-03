@@ -1,3 +1,6 @@
+---
+category: record
+---
 # QuerySet API
 
 ## Methods that return new QuerySets

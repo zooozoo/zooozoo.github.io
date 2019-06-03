@@ -1,3 +1,6 @@
+---
+category: record
+---
 # 명령어 기록 (ubuntu-1604)
 
 

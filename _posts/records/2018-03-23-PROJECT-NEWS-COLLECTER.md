@@ -1,3 +1,6 @@
+---
+category: record
+---
 # 나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.
 
 

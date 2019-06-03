@@ -1,3 +1,6 @@
+---
+category: record
+---
 #### Field option 중 choices
 
 * choices 에서 앞쪽이 데이터베이스 에서 인식하는 벨류값, 뒤쪽이 클라이언트 화면에서 보이는 값

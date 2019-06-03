@@ -1,11 +1,10 @@
 ---
-title: Home
-layout: home
+title: records
+layout: default
 pagination:
     enabled: true
     category: post
 ---
-<h1>hi</h1>
 <div class="catalogue">
     {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
