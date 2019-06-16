@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-03T22:28:04+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HOME</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">파이썬에서 파일 다루기</title><link href="http://localhost:4000/2018-10-06/Docker-RUN,-CMD-ENTRYPOINT" rel="alternate" type="text/html" title="파이썬에서 파일 다루기" /><published>2018-10-06T00:00:00+09:00</published><updated>2018-10-06T00:00:00+09:00</updated><id>http://localhost:4000/2018-10-06/Docker%20RUN,%20CMD%20ENTRYPOINT</id><content type="html" xml:base="http://localhost:4000/2018-10-06/Docker-RUN,-CMD-ENTRYPOINT">&lt;p&gt;RUN, CMD, ENTRYPOINT 의 차이점에 대해서 알아보자.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-16T21:06:39+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HOME</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">RUN, CMD, ENTRYPOINT 의 차이점에 대해서 알아보자.</title><link href="http://localhost:4000/2018-10-06/Docker-RUN,-CMD-ENTRYPOINT" rel="alternate" type="text/html" title="RUN, CMD, ENTRYPOINT 의 차이점에 대해서 알아보자." /><published>2018-10-06T00:00:00+09:00</published><updated>2018-10-06T00:00:00+09:00</updated><id>http://localhost:4000/2018-10-06/Docker%20RUN,%20CMD%20ENTRYPOINT</id><content type="html" xml:base="http://localhost:4000/2018-10-06/Docker-RUN,-CMD-ENTRYPOINT">&lt;p&gt;RUN, CMD, ENTRYPOINT 의 차이점에 대해서 알아보자.&lt;/p&gt;
 
 &lt;p&gt;검색을 하면 한글로도 너무나 잘 설명을 해 놓은 곳이 많기에 관련 링크를 남기고 여기서는 간단한 차이점만 알아보자&lt;/p&gt;
 
@@ -179,157 +179,7 @@ hello
 
 &lt;p&gt;스택오버플로우의 답변에 의하면 os시스템을 통해서 raw stream으로 가져오는 것 보다 메모리에 올려 파일을 읽어오는 것이 더 빠르다고 한다.. (os 시스템에서 raw stream으로 가져오는 것은 대기 시간이 길다고 함) 아마 설정한 buffer chunk 단위로 메모리에 미리 올려 놓기 때문에 더 빠른 것 같다.&lt;/p&gt;
 
-&lt;p&gt;출처 : &lt;a href=&quot;https://docs.python.org/3/library/functions.html#open&quot;&gt;파이썬 공식문서&lt;/a&gt;, &lt;a href=&quot;http://thrillfighter.tistory.com/310&quot;&gt;블로그&lt;/a&gt;, &lt;a href=&quot;https://stackoverflow.com/questions/29712445/what-is-the-use-of-buffering-in-pythons-built-in-open-function&quot;&gt;stackoverflow&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="post" /><category term="python" /><summary type="html">파이썬에서 파일을 읽고 쓰는건 간단한 일인데 어떤 모드를 사용할지 자꾸 헷갈리기도 하고 잘 정리한 블로그가 있어 소개하려고 한다.</summary></entry><entry><title type="html">독하게시작하는c프로그래밍</title><link href="http://localhost:4000/2018-03-24/%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" rel="alternate" type="text/html" title="독하게시작하는c프로그래밍" /><published>2018-03-24T00:00:00+09:00</published><updated>2018-03-24T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-24/%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D</id><content type="html" xml:base="http://localhost:4000/2018-03-24/%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">&lt;h1 id=&quot;제1장-c프로그래밍-입문&quot;&gt;제1장 c프로그래밍 입문&lt;/h1&gt;
-
-&lt;h3 id=&quot;오류해결-사례&quot;&gt;오류해결 사례&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;f7&lt;/code&gt;키를 통해서 빌드할 때 아래와 같은 에러 발생&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;c:\apiexam\firsts\firsts\firsts.cpp(46): fatal error C1010: 미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. ‘#include “StdAfx.h”‘을(를) 소스에 추가하시겠습니까?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;검색을 통해 문제 해결
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://social.msdn.microsoft.com/Forums/ko-KR/cc067d9f-3c6e-4ca6-a5ce-68114a428da3/visual-c-487164630044032-50504461214576845796?forum=visualcplusko&quot;&gt;링크&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;해결방법
-        &lt;ol&gt;
-          &lt;li&gt;프로젝트의 솔루션 탐색기 창에서 마우스 오른쪽 단추로 프로젝트 이름을 클릭한 다음 속성을 클릭합니다.&lt;/li&gt;
-          &lt;li&gt;왼쪽 창에서 C/C++ 폴더를 클릭합니다.&lt;/li&gt;
-          &lt;li&gt;미리 컴파일된 헤더 노드를 클릭합니다.&lt;/li&gt;
-          &lt;li&gt;오른쪽 창에서 미리 컴파일된 헤더 만들기/사용을 클릭한 다음 미리 컴파일된 헤더 사용 안 함을 클릭합니다.&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;강의-중-기록사항&quot;&gt;강의 중 기록사항&lt;/h3&gt;
-
-&lt;p&gt;강의중 나온 단축키 설명&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;f7&lt;/code&gt;  : 빌드&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;f5&lt;/code&gt; : 디버깅 하지 않고 실행 (내용을 확이할 수 있도록 실행 결과가 창에 떠있음)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;제3장-표준-입출력-도구-첫-번째&quot;&gt;제3장 표준 입/출력 도구 첫 번째&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ux의 시대에도 cli와 같은 근본적인 입출력은 잘 알아야 한다. 결국 정보란 문자열이기 때문에&lt;/li&gt;
-  &lt;li&gt;getchar()
-    &lt;ul&gt;
-      &lt;li&gt;어디서 어떻게 가져오는지 알아보자&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;컴퓨터의 구조에 대해서 생각해 보자
-    &lt;ul&gt;
-      &lt;li&gt;컴퓨터
-        &lt;ul&gt;
-          &lt;li&gt;하드웨어&lt;/li&gt;
-          &lt;li&gt;소프트 웨어
-            &lt;ul&gt;
-              &lt;li&gt;시스템 소프트웨어 (ex: os)&lt;/li&gt;
-              &lt;li&gt;응용 소프트웨어&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;컴퓨터의 계층(국가를 예시로 영토, 정부, 가구로 설명함)
-        &lt;ol&gt;
-          &lt;li&gt;하드웨어&lt;/li&gt;
-          &lt;li&gt;커널 os
-            &lt;ul&gt;
-              &lt;li&gt;디바이스를 제어하는 &lt;code class=&quot;highlighter-rouge&quot;&gt;디바이스 드라이버&lt;/code&gt; 커널 소프트웨어&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;유저 user/ 프로세스
-            &lt;ul&gt;
-              &lt;li&gt;프로세스는 각각의 영역을 보장 받는다.&lt;/li&gt;
-              &lt;li&gt;그러나 프로세스가 할당받은 영역을 제어할 수 있는 소프트웨어가 있는데 &lt;code class=&quot;highlighter-rouge&quot;&gt;디버거&lt;/code&gt;라고 한다.&lt;/li&gt;
-              &lt;li&gt;다른프로세스의 메모리를 변조하는 공격을 메모리 해킹이라고 하는데 이것을 &lt;code class=&quot;highlighter-rouge&quot;&gt;디버거&lt;/code&gt;로 한다. 또한 소프트웨어의 문제를 해결하는 것 또한 &lt;code class=&quot;highlighter-rouge&quot;&gt;디버거&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;유저모드에서 커널모드로의 진입은 불가&lt;/li&gt;
-              &lt;li&gt;커널과 연결할 수 있는 추상화된 인터페이스 -&amp;gt; 파일(File)&lt;/li&gt;
-              &lt;li&gt;파일은 파일마다 고유한 입출력 버퍼를 가지고 있다. (즉 메모리를 가지고 있다.)
-                &lt;ol&gt;
-                  &lt;li&gt;write
-                    &lt;ul&gt;
-                      &lt;li&gt;ex) putchar(‘A’)를 할 경우 ‘A’라는 버퍼를 체우게 되는데 이것을 버퍼링이라고 한다.&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;read
-                    &lt;ul&gt;
-                      &lt;li&gt;ex) getchar()함수는 버퍼로 부터 한 글자를 퍼올리는역할을 한다.&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                &lt;/ol&gt;
-              &lt;/li&gt;
-              &lt;li&gt;파일을 알맞은 규칙에 맞게 작성해서 커널로 전달하면 커널이 다시 하드웨어를 작동시킨다. 이때에 규칙이 &lt;code class=&quot;highlighter-rouge&quot;&gt;Protocol&lt;/code&gt;(protocol은 정보전달 규약)&lt;/li&gt;
-              &lt;li&gt;파일 입출력의 다양한 규칙을 맞추기 어려우니 하나의 함수 형태로 만들어 놓은게 getchar(), putchar() 함수다.&lt;/li&gt;
-              &lt;li&gt;만약 프로토콜이 TCP일 경우, 프로토콜 서비스를 추상화한 파일의 경우 특별하게 &lt;code class=&quot;highlighter-rouge&quot;&gt;socket&lt;/code&gt;이라고 한다.&lt;/li&gt;
-              &lt;li&gt;소켓은 정보를 수신할 때 언제 수신할지 모르기 때문에 비동기 방식을 체택한다.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;c언어는 컴퓨터의 모든부분을 커버할 수 있다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;입출력 (I/O)을 수행하는 주체 -&amp;gt; 커널&lt;/li&gt;
-  &lt;li&gt;putchar() - 입출력을 요구하는 함수&lt;/li&gt;
-  &lt;li&gt;입출력은 user모드 어플리케이션에서 요구하고 -&amp;gt; 커널이 입출력을 담당한다.&lt;/li&gt;
-  &lt;li&gt;소캣프로그래밍을 잘하고 싶다면 시스템 프로그래밍 + file I/O + Protocol  이렇게 하면 된다.&lt;/li&gt;
-  &lt;li&gt;putchar, getchar는 버퍼드I/O를 한다.&lt;/li&gt;
-  &lt;li&gt;getchar()함수의 작동 과정
-    &lt;ul&gt;
-      &lt;li&gt;하드웨어에서(ex, 키보드) ‘hello’를 입력받으면 장치드라이버와 인터페이스를 통해 파일을 추상화 한 후 해당 파일로 부터 꺼내서 read를 하게 된다. 파일마다 I/O 버퍼가 존재한다. 버퍼에 ‘hello가 쌓이게 됨’ -&amp;gt; 이런 상황에서 getchar함수를 실행하면 ‘h’를 끄집어 내서 ‘char’형식으로 반환한다.  그런데 getchar함수의 원형은 int를 반환하게 되어있음 (char + int는 int가 된다.)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;버퍼와, 버퍼링
-    &lt;ul&gt;
-      &lt;li&gt;버퍼
-        &lt;ul&gt;
-          &lt;li&gt;메모리&lt;/li&gt;
-          &lt;li&gt;데이터를 한 곳에서 다른 곳으로 전송하는 동안 일시적으로 그 데이터를 보관하는 메모리 영역&lt;/li&gt;
-          &lt;li&gt;사전적 정의는 ‘완충기’&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;버퍼링
-        &lt;ul&gt;
-          &lt;li&gt;정보 전달 과정에서 정보를 소비하는 쪽에서 정보 전달에 문제가 생긴 상황을 모르게 하는 것&lt;/li&gt;
-          &lt;li&gt;버퍼를 활용하는 방식 또는 버퍼를 채우는 동작을 말한다. 다른 말로는 ‘큐’라고도 표현한다.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;논버퍼드 I/O
-    &lt;ul&gt;
-      &lt;li&gt;정보가 전달 될 때 복사되서 전달하는게 아니라 한번에 어떤 장치와 cpu가 직접 정보를 전달하게 되면 더 빠른 정보 전달이 가능하다.&lt;/li&gt;
-      &lt;li&gt;DMA - Direct Memory Access&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;버퍼드 I/O를 하는 함수
-    &lt;ul&gt;
-      &lt;li&gt;하드웨어 -&amp;gt; 콘솔 -&amp;gt; 파일을 통해 버퍼에 정보가 쌓인다.&lt;/li&gt;
-      &lt;li&gt;getchar() - 버퍼에서 한글자씩 빼오는거&lt;/li&gt;
-      &lt;li&gt;scanf() - 형식문자 규칙에 맞게 빼오는거 / 보안결함이 있기 때문에 scanf_s()를 사용하세요, 단 리눅스에는 없습니다. 윈도우에만 있습니다.&lt;/li&gt;
-      &lt;li&gt;gets() - 버퍼에서 한줄씩 빼오는거 / 보안결함이 있기 때문에 gets_s()를 사용하세요&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;논버퍼드 I/O
-    &lt;ul&gt;
-      &lt;li&gt;-getch()&lt;/li&gt;
-      &lt;li&gt;버퍼에서 정보를 읽어오는 것이 아니라, 하드웨어 에서의 인터럽트를 즉시wait하고 있음&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;fflush()
-    &lt;ul&gt;
-      &lt;li&gt;버퍼를 비우는 함수&lt;/li&gt;
-      &lt;li&gt;원래는 output만 되는데 윈도우는 input도 됨&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="record" /><summary type="html">제1장 c프로그래밍 입문</summary></entry><entry><title type="html">생활코딩web2 javascript</title><link href="http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2-javascript" rel="alternate" type="text/html" title="생활코딩web2 javascript" /><published>2018-03-24T00:00:00+09:00</published><updated>2018-03-24T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2%20javascript</id><content type="html" xml:base="http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2-javascript">&lt;h1 id=&quot;수업을-시작하며&quot;&gt;수업을 시작하며&lt;/h1&gt;
+&lt;p&gt;출처 : &lt;a href=&quot;https://docs.python.org/3/library/functions.html#open&quot;&gt;파이썬 공식문서&lt;/a&gt;, &lt;a href=&quot;http://thrillfighter.tistory.com/310&quot;&gt;블로그&lt;/a&gt;, &lt;a href=&quot;https://stackoverflow.com/questions/29712445/what-is-the-use-of-buffering-in-pythons-built-in-open-function&quot;&gt;stackoverflow&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="post" /><category term="python" /><summary type="html">파이썬에서 파일을 읽고 쓰는건 간단한 일인데 어떤 모드를 사용할지 자꾸 헷갈리기도 하고 잘 정리한 블로그가 있어 소개하려고 한다.</summary></entry><entry><title type="html">생활코딩web2 javascript</title><link href="http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2-javascript" rel="alternate" type="text/html" title="생활코딩web2 javascript" /><published>2018-03-24T00:00:00+09:00</published><updated>2018-03-24T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2%20javascript</id><content type="html" xml:base="http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2-javascript">&lt;h1 id=&quot;수업을-시작하며&quot;&gt;수업을 시작하며&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;w3s의 자바스크립트를 한번 훑어 본 후 1.5배속으로 강의를 빠르게 들었다.&lt;/li&gt;
@@ -817,7 +667,157 @@ while(i &amp;lt; coworkers.length){
       &lt;li&gt;이렇게 하다가 다시 한계에 부딧치게 된다. 그럼 그때가 다시 공부를 시작할 때&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="record" /><summary type="html">수업을 시작하며</summary></entry><entry><title type="html">생활코딩web3 ajax</title><link href="http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3-Ajax" rel="alternate" type="text/html" title="생활코딩web3 ajax" /><published>2018-03-24T00:00:00+09:00</published><updated>2018-03-24T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax</id><content type="html" xml:base="http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3-Ajax">&lt;h1 id=&quot;수업을-시작하며&quot;&gt;수업을 시작하며&lt;/h1&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="record" /><summary type="html">수업을 시작하며</summary></entry><entry><title type="html">독하게시작하는c프로그래밍</title><link href="http://localhost:4000/2018-03-24/%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" rel="alternate" type="text/html" title="독하게시작하는c프로그래밍" /><published>2018-03-24T00:00:00+09:00</published><updated>2018-03-24T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-24/%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D</id><content type="html" xml:base="http://localhost:4000/2018-03-24/%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">&lt;h1 id=&quot;제1장-c프로그래밍-입문&quot;&gt;제1장 c프로그래밍 입문&lt;/h1&gt;
+
+&lt;h3 id=&quot;오류해결-사례&quot;&gt;오류해결 사례&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;f7&lt;/code&gt;키를 통해서 빌드할 때 아래와 같은 에러 발생&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;c:\apiexam\firsts\firsts\firsts.cpp(46): fatal error C1010: 미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. ‘#include “StdAfx.h”‘을(를) 소스에 추가하시겠습니까?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;검색을 통해 문제 해결
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://social.msdn.microsoft.com/Forums/ko-KR/cc067d9f-3c6e-4ca6-a5ce-68114a428da3/visual-c-487164630044032-50504461214576845796?forum=visualcplusko&quot;&gt;링크&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;해결방법
+        &lt;ol&gt;
+          &lt;li&gt;프로젝트의 솔루션 탐색기 창에서 마우스 오른쪽 단추로 프로젝트 이름을 클릭한 다음 속성을 클릭합니다.&lt;/li&gt;
+          &lt;li&gt;왼쪽 창에서 C/C++ 폴더를 클릭합니다.&lt;/li&gt;
+          &lt;li&gt;미리 컴파일된 헤더 노드를 클릭합니다.&lt;/li&gt;
+          &lt;li&gt;오른쪽 창에서 미리 컴파일된 헤더 만들기/사용을 클릭한 다음 미리 컴파일된 헤더 사용 안 함을 클릭합니다.&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;강의-중-기록사항&quot;&gt;강의 중 기록사항&lt;/h3&gt;
+
+&lt;p&gt;강의중 나온 단축키 설명&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;f7&lt;/code&gt;  : 빌드&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;f5&lt;/code&gt; : 디버깅 하지 않고 실행 (내용을 확이할 수 있도록 실행 결과가 창에 떠있음)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;제3장-표준-입출력-도구-첫-번째&quot;&gt;제3장 표준 입/출력 도구 첫 번째&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ux의 시대에도 cli와 같은 근본적인 입출력은 잘 알아야 한다. 결국 정보란 문자열이기 때문에&lt;/li&gt;
+  &lt;li&gt;getchar()
+    &lt;ul&gt;
+      &lt;li&gt;어디서 어떻게 가져오는지 알아보자&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;컴퓨터의 구조에 대해서 생각해 보자
+    &lt;ul&gt;
+      &lt;li&gt;컴퓨터
+        &lt;ul&gt;
+          &lt;li&gt;하드웨어&lt;/li&gt;
+          &lt;li&gt;소프트 웨어
+            &lt;ul&gt;
+              &lt;li&gt;시스템 소프트웨어 (ex: os)&lt;/li&gt;
+              &lt;li&gt;응용 소프트웨어&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;컴퓨터의 계층(국가를 예시로 영토, 정부, 가구로 설명함)
+        &lt;ol&gt;
+          &lt;li&gt;하드웨어&lt;/li&gt;
+          &lt;li&gt;커널 os
+            &lt;ul&gt;
+              &lt;li&gt;디바이스를 제어하는 &lt;code class=&quot;highlighter-rouge&quot;&gt;디바이스 드라이버&lt;/code&gt; 커널 소프트웨어&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;유저 user/ 프로세스
+            &lt;ul&gt;
+              &lt;li&gt;프로세스는 각각의 영역을 보장 받는다.&lt;/li&gt;
+              &lt;li&gt;그러나 프로세스가 할당받은 영역을 제어할 수 있는 소프트웨어가 있는데 &lt;code class=&quot;highlighter-rouge&quot;&gt;디버거&lt;/code&gt;라고 한다.&lt;/li&gt;
+              &lt;li&gt;다른프로세스의 메모리를 변조하는 공격을 메모리 해킹이라고 하는데 이것을 &lt;code class=&quot;highlighter-rouge&quot;&gt;디버거&lt;/code&gt;로 한다. 또한 소프트웨어의 문제를 해결하는 것 또한 &lt;code class=&quot;highlighter-rouge&quot;&gt;디버거&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;유저모드에서 커널모드로의 진입은 불가&lt;/li&gt;
+              &lt;li&gt;커널과 연결할 수 있는 추상화된 인터페이스 -&amp;gt; 파일(File)&lt;/li&gt;
+              &lt;li&gt;파일은 파일마다 고유한 입출력 버퍼를 가지고 있다. (즉 메모리를 가지고 있다.)
+                &lt;ol&gt;
+                  &lt;li&gt;write
+                    &lt;ul&gt;
+                      &lt;li&gt;ex) putchar(‘A’)를 할 경우 ‘A’라는 버퍼를 체우게 되는데 이것을 버퍼링이라고 한다.&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;read
+                    &lt;ul&gt;
+                      &lt;li&gt;ex) getchar()함수는 버퍼로 부터 한 글자를 퍼올리는역할을 한다.&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                &lt;/ol&gt;
+              &lt;/li&gt;
+              &lt;li&gt;파일을 알맞은 규칙에 맞게 작성해서 커널로 전달하면 커널이 다시 하드웨어를 작동시킨다. 이때에 규칙이 &lt;code class=&quot;highlighter-rouge&quot;&gt;Protocol&lt;/code&gt;(protocol은 정보전달 규약)&lt;/li&gt;
+              &lt;li&gt;파일 입출력의 다양한 규칙을 맞추기 어려우니 하나의 함수 형태로 만들어 놓은게 getchar(), putchar() 함수다.&lt;/li&gt;
+              &lt;li&gt;만약 프로토콜이 TCP일 경우, 프로토콜 서비스를 추상화한 파일의 경우 특별하게 &lt;code class=&quot;highlighter-rouge&quot;&gt;socket&lt;/code&gt;이라고 한다.&lt;/li&gt;
+              &lt;li&gt;소켓은 정보를 수신할 때 언제 수신할지 모르기 때문에 비동기 방식을 체택한다.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;c언어는 컴퓨터의 모든부분을 커버할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;입출력 (I/O)을 수행하는 주체 -&amp;gt; 커널&lt;/li&gt;
+  &lt;li&gt;putchar() - 입출력을 요구하는 함수&lt;/li&gt;
+  &lt;li&gt;입출력은 user모드 어플리케이션에서 요구하고 -&amp;gt; 커널이 입출력을 담당한다.&lt;/li&gt;
+  &lt;li&gt;소캣프로그래밍을 잘하고 싶다면 시스템 프로그래밍 + file I/O + Protocol  이렇게 하면 된다.&lt;/li&gt;
+  &lt;li&gt;putchar, getchar는 버퍼드I/O를 한다.&lt;/li&gt;
+  &lt;li&gt;getchar()함수의 작동 과정
+    &lt;ul&gt;
+      &lt;li&gt;하드웨어에서(ex, 키보드) ‘hello’를 입력받으면 장치드라이버와 인터페이스를 통해 파일을 추상화 한 후 해당 파일로 부터 꺼내서 read를 하게 된다. 파일마다 I/O 버퍼가 존재한다. 버퍼에 ‘hello가 쌓이게 됨’ -&amp;gt; 이런 상황에서 getchar함수를 실행하면 ‘h’를 끄집어 내서 ‘char’형식으로 반환한다.  그런데 getchar함수의 원형은 int를 반환하게 되어있음 (char + int는 int가 된다.)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;버퍼와, 버퍼링
+    &lt;ul&gt;
+      &lt;li&gt;버퍼
+        &lt;ul&gt;
+          &lt;li&gt;메모리&lt;/li&gt;
+          &lt;li&gt;데이터를 한 곳에서 다른 곳으로 전송하는 동안 일시적으로 그 데이터를 보관하는 메모리 영역&lt;/li&gt;
+          &lt;li&gt;사전적 정의는 ‘완충기’&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;버퍼링
+        &lt;ul&gt;
+          &lt;li&gt;정보 전달 과정에서 정보를 소비하는 쪽에서 정보 전달에 문제가 생긴 상황을 모르게 하는 것&lt;/li&gt;
+          &lt;li&gt;버퍼를 활용하는 방식 또는 버퍼를 채우는 동작을 말한다. 다른 말로는 ‘큐’라고도 표현한다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;논버퍼드 I/O
+    &lt;ul&gt;
+      &lt;li&gt;정보가 전달 될 때 복사되서 전달하는게 아니라 한번에 어떤 장치와 cpu가 직접 정보를 전달하게 되면 더 빠른 정보 전달이 가능하다.&lt;/li&gt;
+      &lt;li&gt;DMA - Direct Memory Access&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;버퍼드 I/O를 하는 함수
+    &lt;ul&gt;
+      &lt;li&gt;하드웨어 -&amp;gt; 콘솔 -&amp;gt; 파일을 통해 버퍼에 정보가 쌓인다.&lt;/li&gt;
+      &lt;li&gt;getchar() - 버퍼에서 한글자씩 빼오는거&lt;/li&gt;
+      &lt;li&gt;scanf() - 형식문자 규칙에 맞게 빼오는거 / 보안결함이 있기 때문에 scanf_s()를 사용하세요, 단 리눅스에는 없습니다. 윈도우에만 있습니다.&lt;/li&gt;
+      &lt;li&gt;gets() - 버퍼에서 한줄씩 빼오는거 / 보안결함이 있기 때문에 gets_s()를 사용하세요&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;논버퍼드 I/O
+    &lt;ul&gt;
+      &lt;li&gt;-getch()&lt;/li&gt;
+      &lt;li&gt;버퍼에서 정보를 읽어오는 것이 아니라, 하드웨어 에서의 인터럽트를 즉시wait하고 있음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;fflush()
+    &lt;ul&gt;
+      &lt;li&gt;버퍼를 비우는 함수&lt;/li&gt;
+      &lt;li&gt;원래는 output만 되는데 윈도우는 input도 됨&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="record" /><summary type="html">제1장 c프로그래밍 입문</summary></entry><entry><title type="html">생활코딩web3 ajax</title><link href="http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3-Ajax" rel="alternate" type="text/html" title="생활코딩web3 ajax" /><published>2018-03-24T00:00:00+09:00</published><updated>2018-03-24T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax</id><content type="html" xml:base="http://localhost:4000/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3-Ajax">&lt;h1 id=&quot;수업을-시작하며&quot;&gt;수업을 시작하며&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;ajax를 빠르게 알아보고 진행하는 프로젝트에 적용해보고자 해서 w3s 튜토리얼을 훑어본 후 생활코딩 강의도 빠르게 보면서 기본 개념들을 익혀 나가는 것이 목적&lt;/li&gt;
@@ -1015,167 +1015,7 @@ function fetchPage(name){
 &lt;ul&gt;
   &lt;li&gt;앞으로 공부할 만한 주제에 대한 소개&lt;/li&gt;
   &lt;li&gt;xml, json, Single Page Application(SPA), PJAX(ajax를 사용하면서도 검색엔진에 노출될 수있는 기술), Progressive Web Apps(spa의 발전된 형태, 웹+offline에서도 동작할 수 있게 만드는 기술)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="record" /><summary type="html">수업을 시작하며</summary></entry><entry><title type="html">Nginx</title><link href="http://localhost:4000/2018-03-23/NGINX" rel="alternate" type="text/html" title="Nginx" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-23/NGINX</id><content type="html" xml:base="http://localhost:4000/2018-03-23/NGINX">&lt;h2 id=&quot;생활코딩-nginx강의&quot;&gt;생활코딩 Nginx강의&lt;/h2&gt;
-
-&lt;p&gt;아래의 내용은 egoing님이 강의하시는 opentutorials의 NGINX강의에서 발췌한 것 입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://opentutorials.org/module/384/3462&quot;&gt;강의 링크&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;1강-nginx-소개&quot;&gt;1강 Nginx 소개&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;웹, 클라이언트와 서버간의 관계에 대한 설명&lt;/li&gt;
-  &lt;li&gt;HTTP에 대한 소개&lt;/li&gt;
-  &lt;li&gt;Web server -&amp;gt; HTTP라고도 할 수 있다.&lt;/li&gt;
-  &lt;li&gt;웹서버의 역사
-    &lt;ul&gt;
-      &lt;li&gt;아파치의 압도적인 점유율&lt;/li&gt;
-      &lt;li&gt;그러나 최근들어서 점점 아파치의 점유율을 따라오고 있다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Nginx는 차세대 웹서버 - 더 적은 자원으로 더 빠르게 데이터를 서비스할 수 있는 경량화된 웹서버&lt;/li&gt;
-  &lt;li&gt;Document Root : &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/share/nginx/html/&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;설정파일: &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;conf.d&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;default.conf&lt;/code&gt;에는 nginx의 기본 설정이 있다.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;conf.d&lt;/code&gt;는 이름이 달라질 수 있다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;로그파일: &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/log/nginx/&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2강-nginx-컴파일&quot;&gt;2강 Nginx 컴파일&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;컴파일하는 방법, 의존성 등의 문제가있는 난이도가 있음&lt;/li&gt;
-  &lt;li&gt;Nginx 모듈을 컴파일을 통해서만 설치할 수 있기 때문에 알아두면 좋다&lt;/li&gt;
-  &lt;li&gt;Nginx는 세가지 버전이 있다.
-    &lt;ul&gt;
-      &lt;li&gt;안전버전 : 실제 배포할 때&lt;/li&gt;
-      &lt;li&gt;개발버전: 개발할 때 / 버그가 발생할 수 있다.&lt;/li&gt;
-      &lt;li&gt;레거시버전: 예전버전의 Nginx&lt;/li&gt;
-      &lt;li&gt;안전버전의 설치가 권장된다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Nginx는 마스터 프로세스(Master Process)와 작업자 프로세스(Worker Process)를 가지고 있다.
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ps aux | grep nginx&lt;/code&gt;를 실행해보면 아래와 같은 프로세스가 떠있을 것이다.&lt;/li&gt;
-      &lt;li&gt;마스터 프로세스는 루트 계정으로 실행되면서 80, 443 포트의 소켓과의 통신을 담당한다.&lt;/li&gt;
-      &lt;li&gt;작업자 프로세스는 실제로 데이터를 처리하는 프로세스라고 할 수 있는데 이 프로세스를 핸들링할 사용자를 만들어야 한다. 일반적으로 웹서버의 워커 유저는 www-data를 사용한다. www-data를 만드는 법은 아래와 같다.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;useradd --shell /usr/sbin/nologin www-data&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;3강-php-fpm-mysql-1&quot;&gt;3강 PHP-FPM-MYSQL 1&lt;/h2&gt;
-
-&lt;h3 id=&quot;cgi&quot;&gt;CGI&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;CGI는 Common Gateway Interface의 약자로 웹서버와 외부 프로그램을 연결해주는 표준화된 프로토콜이다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/384/1398.gif&quot; alt=&quot;cgi based server&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;fastcgi&quot;&gt;FastCGI&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;CGI 는 하나의 요청(Request)에 하나의 프로세스를 생성한다. 이것은 프로세스를 생성하고 삭제하는 과정에서 많은 부하가 발생한다. 당연히 느리다. 이를 개선하기 위해서 등장한 것이 FastCGI이다. FastCGI는 요청이 있을 때마다 프로세스가 만들어지는 것이 아니라 만들어진 프로세스가 계속해서 새로운 요청들을 처리한다. 덕분에 프로세스를 생성하고 제거하는데 들어가는 부하가 줄어든다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/384/1397.gif&quot; alt=&quot;cgi based server&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;3강-php-fpm-mysql-2&quot;&gt;3강 PHP-FPM-MYSQL 2&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;FPM, 과 MYSQL을 설치를 한 후에는 Nginx를 설정해 줘야 하는데 설정파일은 &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/conf.d/default.conf&lt;/code&gt; 이거나 &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/sites-available/default&lt;/code&gt;에 있다.&lt;/li&gt;
-  &lt;li&gt;socker - fastcgi_pass는 php-fpm과 NGINX를 연결하기 위한 인터페이스를 지정하는 것.&lt;/li&gt;
-  &lt;li&gt;Upstream Module - Upstream Module는 NGINX를 일종의 부하분배장치(Load Balancer)로 이용할 수 있게 해주는 NGINX의 모듈이다. 자세한 내용은 Upstream Module를 참고한다. &lt;a href=&quot;http://opentutorials.org/module/384/4328&quot;&gt;Upstream Module 바로가기&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4강-php-fpm-mysql-3&quot;&gt;4강 PHP-FPM-MYSQL 3&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;PHP를 Nginx와 독립된 별도의 서버에 설치하여 연결하는 것을 설명&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;5강-nginx-환경설정&quot;&gt;5강 NGINX 환경설정&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Nginx 설정파일은 conf 디렉토리 아래에 위치하고, 설치 바업에 따라서 설정파일의 위치가 다를 수 있다.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;컴파일을 통해 설치할 경우 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/nginx/conf&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;을 이용해서 우분투에 설치할 경우 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;설정파일 위치를 찾는 명령어
-&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo find / -name nginx.conf&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;설정파일의 역할&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;nginx.conf : 메인 설정 파일.&lt;/li&gt;
-      &lt;li&gt;fcgi.conf : FastCGI 환경설정 파일&lt;/li&gt;
-      &lt;li&gt;sites-enabled : 활성화된 사이트들의 설정 파일들이 위치. 아파치에서는 Virtual host의 설정에 해당한다. 기본적으로 존재하지 않을수도 있다. 이 디렉토리를 직접 만들어서 사용하는 방법은 &lt;a href=&quot;http://opentutorials.org/module/384/4529&quot;&gt;가상 호스팅&lt;/a&gt;편에서 알아본다.&lt;/li&gt;
-      &lt;li&gt;sites-available : 비활성화된 사이트들의 설정 파일들이 위치&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;아래의 Nginx 메인 환경설정 파일인 &lt;code class=&quot;highlighter-rouge&quot;&gt;nginx.conf&lt;/code&gt;의 내용을 파해치며 Nginx의 환경설정을 이해해 나가보자&lt;/p&gt;
-
-    &lt;div class=&quot;language-nginx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;worker_processes&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;events&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kn&quot;&gt;worker_connections&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;http&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kn&quot;&gt;include&lt;/span&gt;       &lt;span class=&quot;s&quot;&gt;mime.types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kn&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kn&quot;&gt;listen&lt;/span&gt;       &lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;kn&quot;&gt;root&lt;/span&gt;   &lt;span class=&quot;s&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;kn&quot;&gt;index&lt;/span&gt;  &lt;span class=&quot;s&quot;&gt;index.html&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;index.htm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;h3 id=&quot;core-모듈-설정&quot;&gt;Core 모듈 설정&lt;/h3&gt;
-
-    &lt;p&gt;위의 예의 work_processes와 같은 지시자 설정 파일 최상단에 위치하면서 nginx의 기본적인 동작 방식을 정의한다. 여기서 사용되는 지시어들은 다른 곳에서 사용되지 않는다. &lt;a href=&quot;http://opentutorials.org/module/384/4533&quot;&gt;코어모듈 지시어 사전&lt;/a&gt;을 참고하자.&lt;/p&gt;
-
-    &lt;h3 id=&quot;http-블록&quot;&gt;http 블록&lt;/h3&gt;
-
-    &lt;p&gt;http 블록은 이후에 소개할 server, location의 루트 블록이라고 할 수 있고, 여기서 설정된 값을 하위 블록들은 상속한다. http 블록은 여러개를 사용할 수 있지만 관리상의 이슈로 한번만 사용하는 것을 권장한다.&lt;/p&gt;
-
-    &lt;p&gt;http, server, location 블록은 계층구조를 가지고 있다. 많은 지시어가 각각의 블록에서 동시에 사용할 수 있는데, http의 내용은 server의 기본값이 되고, server의 지시어는 location의 기본값이 된다. 그리고 하위의 블록에서 선언된 지시어는 상위의 선언을 무시하고 적용된다.&lt;/p&gt;
-
-    &lt;h3 id=&quot;server-블록&quot;&gt;server 블록&lt;/h3&gt;
-
-    &lt;p&gt;server 블록은 하나의 웹사이트를 선언하는데 사용된다. 가상 호스팅(Virtual Host)의 개념이다. 예를들어 하나의 서버로 http://opentutorials.org 과 http://egoing.net 을 동시에 운영하고 싶은 경우 사용할 수 있는 방법이다. 가상 호스팅에 대한 자세한 내용은 &lt;a href=&quot;http://opentutorials.org/module/384/4529&quot;&gt;가상 호스팅 수업&lt;/a&gt;을 참고하자.&lt;/p&gt;
-
-    &lt;h3 id=&quot;location-블록&quot;&gt;location 블록&lt;/h3&gt;
-
-    &lt;p&gt;location 블록은 server 블록 안에 등장하면서 특정 URL을 처리하는 방법을 정의한다. 이를테면 http://opentutorials.org/course/1 과 http://opentutorials.org/module/1 로 접근하는 요청을 다르게 처리하고 싶을 때 사용한다.&lt;/p&gt;
-
-    &lt;h3 id=&quot;events-블록&quot;&gt;events 블록&lt;/h3&gt;
-
-    &lt;p&gt;이벤트 블록은 주로 네트워크의 동작방법과 관련된 설정값을 가진다. 이벤트 블록의 지시어들은 이벤트 블록에서만 사용할 수 있고, http, server, location와는 상속관계를 갖지 않는다. 이벤트 모듈 지시어에 대한 설명은 &lt;a href=&quot;http://opentutorials.org/module/384/4534&quot;&gt;이벤트 모듈 지시어 사전&lt;/a&gt;을 참고한다.&lt;/p&gt;
-
-    &lt;h3 id=&quot;설정-파일의-반영&quot;&gt;설정 파일의 반영&lt;/h3&gt;
-
-    &lt;p&gt;설정 파일의 내용을 변경한 후에는 이를 NGINX에 반영해야 하는데 아래와 같이 reload 명령을 이용한다. restart를 이용해도 되지만 권장되지 않는다.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;forward-proxy와-reverse-proxy의-차이&quot;&gt;Forward proxy와 Reverse proxy의 차이&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.lesstif.com/pages/viewpage.action?pageId=21430345&quot;&gt;https://www.lesstif.com/pages/viewpage.action?pageId=21430345&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;vps란&quot;&gt;VPS란?&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://library.gabia.com/contents/infrahosting/3594&quot;&gt;http://library.gabia.com/contents/infrahosting/3594&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="record" /><summary type="html">생활코딩 Nginx강의</summary></entry><entry><title type="html">Project Explog</title><link href="http://localhost:4000/2018-03-23/PROJECT-EXPLOG" rel="alternate" type="text/html" title="Project Explog" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-23/PROJECT-EXPLOG</id><content type="html" xml:base="http://localhost:4000/2018-03-23/PROJECT-EXPLOG">&lt;h1 id=&quot;나의-여행기-기록-sns-explog를-개발하며-기록해-놓은-자료입니다&quot;&gt;나의 여행기 기록 SNS EXPLOG를 개발하며 기록해 놓은 자료입니다.&lt;/h1&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="record" /><summary type="html">수업을 시작하며</summary></entry><entry><title type="html">Project Explog</title><link href="http://localhost:4000/2018-03-23/PROJECT-EXPLOG" rel="alternate" type="text/html" title="Project Explog" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-23/PROJECT-EXPLOG</id><content type="html" xml:base="http://localhost:4000/2018-03-23/PROJECT-EXPLOG">&lt;h1 id=&quot;나의-여행기-기록-sns-explog를-개발하며-기록해-놓은-자료입니다&quot;&gt;나의 여행기 기록 SNS EXPLOG를 개발하며 기록해 놓은 자료입니다.&lt;/h1&gt;
 
 &lt;h2 id=&quot;11-21-화요일&quot;&gt;11-21 화요일&lt;/h2&gt;
 
@@ -2534,327 +2374,7 @@ apnsdevice_set 안에 있는 registrations_id 의 value값이 토큰&lt;/p&gt;
 
     &lt;p&gt;​&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="record" /><summary type="html">나의 여행기 기록 SNS EXPLOG를 개발하며 기록해 놓은 자료입니다.</summary></entry><entry><title type="html">Project News Collecter</title><link href="http://localhost:4000/2018-03-23/PROJECT-NEWS-COLLECTER" rel="alternate" type="text/html" title="Project News Collecter" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-23/PROJECT-NEWS-COLLECTER</id><content type="html" xml:base="http://localhost:4000/2018-03-23/PROJECT-NEWS-COLLECTER">&lt;h1 id=&quot;나만의-뉴스-스탠드-news-collecter-프로젝트를-진행하며-기록해-놓은-자료입니다&quot;&gt;나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Custom Homepage Project &lt;a href=&quot;https://www.news-collecter.com/&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/strong&gt;
-홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.
-주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;참고한-사이트-모음&quot;&gt;참고한 사이트 모음&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.codeproject.com/Articles/546960/HTML-Quick-Start-Web-Application&quot;&gt;html 레이아웃 관련&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;프로젝트 Github : https://github.com/zooozoo/homepage-project&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;if statement에서 else를 쓰는게 좋은지 아니면 그냥 return 하는게 좋은지에 관한 이야기, 속도나 기능적인 부분에서 차이는 없고
-얼마나 읽기 편한지와같은 문제가 고려되는데 else를 쓰기보다는 바로 return하는 방식이 더 좋다는 의견이 많다. 관련 논쟁 스택오버플로우 링크
-&lt;a href=&quot;https://stackoverflow.com/questions/14844531/is-it-preferable-to-use-an-else-in-python-when-its-not-necessary&quot;&gt;https://stackoverflow.com/questions/14844531/is-it-preferable-to-use-an-else-in-python-when-its-not-necessary&lt;/a&gt;
-&lt;a href=&quot;https://stackoverflow.com/questions/9191388/it-is-more-efficient-to-use-if-return-return-or-if-else-return&quot;&gt;https://stackoverflow.com/questions/9191388/it-is-more-efficient-to-use-if-return-return-or-if-else-return&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;다음-단계&quot;&gt;다음 단계&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;user과 화면에서 동적으로 언론사 배치순서를 조정할 수 있도록 만들기&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;task.py 에서 버전 삭제로직 변경해야함 -&amp;gt; 전체를 삭제하는 것이 아닌 특정 버전 이하는 모두 삭제할 수 있게끔&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;나중에-해야할-일&quot;&gt;나중에 해야할 일&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;header 파트 레이아웃 리팩터링 필요
--&amp;gt; 부트스트랩 레이아웃 사용해서 해결&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;크롤링한 데이터에서 ‘문답’과 같은 요소들 없애기
--&amp;gt; 글자수에 조건을 걸어서 해결&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;nav에 news_select_section에서 한글로 언론사이름 보여줄 수 있게 수정
--&amp;gt; filed에 verbose name 설정하고, index.html의 card header 부분에 field.name을 field.value로 변경해서 해결&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;main에 checkbox form에 initial data 전달하는거 더 효율적으로 할 수 있는지 살펴보기
--&amp;gt; model form 이기 때문에 데이터베이스에서 가져온 모델 인스턴스를 전달함으로써 initiated된 폼을 사용할 수 있음&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;에러가 나면 데이터베이스에 있는 내용을 끌어올 수 있도록 만들기&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;news-select-section에 있는 checkbox를 1열 래이아웃으로 바꾸기&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;산발적으로 발생하는 에러 잡기
-에러&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  File &quot;/home/zoozoo/projects/project-hp/my_homepage/main/utils.py&quot;, line 230, in khan_news_title
-    title=soup.find('div', class_='topNews').a.text,
-  AttributeError: 'NoneType' object has no attribute 'a'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;개발과정에-대한-기록&quot;&gt;개발과정에 대한 기록&lt;/h2&gt;
-
-&lt;h3 id=&quot;배포를-위한-기본-세팅&quot;&gt;배포를 위한 기본 세팅&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;aws계정 생성&lt;/li&gt;
-  &lt;li&gt;IAM 유저와, 보안그룹 생성&lt;/li&gt;
-  &lt;li&gt;aws cli를 활용해 기본정보 등록&lt;/li&gt;
-  &lt;li&gt;local 에서 postgres 연결 확인&lt;/li&gt;
-  &lt;li&gt;settings 를 패키지로 만들고 deploy 와 dev용 setting 모듈 분리&lt;/li&gt;
-  &lt;li&gt;RDS, S3와 연결되고 로컬에서 80번port로 접속 가능한 docker만들기&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;docker를-만드는-과정에서-있었던-일&quot;&gt;docker를 만드는 과정에서 있었던 일&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker를 만드는 과정에서 basedocker를 새로 구성할 필요가 있어서 간단하게 새 명령어를 집어넣고 새로 buil를 하는데 pyenv를 의존성문제를 해결하기 위한 구성을 다울로드 하는 과정에 에러가 발생했다.
-
-```
-E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.04_all.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-amdgpu1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-intel1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-nouveau2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-radeon1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libglapi-mesa_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-dri_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-glx_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.0.2g-1ubuntu4.8_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-doc_1.0.2g-1ubuntu4.8_all.deb  404  Not Found [IP: 91.189.88.152 80]
-
-E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-The command '/bin/sh -c apt-get install -y make build-essential             libssl-dev zlib1g-dev libbz2-dev             libreadline-dev libsqlite3-dev wget             curl llvm libncurses5-dev libncursesw5-dev             xz-utils tk-dev' returned a non-zero code: 100
-```
-
-대략 이런 에러였는데 `apt-get update`부분을 살펴보니 이전에 같은 태그명으로 생성했던 적이 있어서 캐시를 사용해 build 하는 것을 확인했다. 캐쉬를 쓰지 않고 생으로 docker를 빌드하기 위한 명령어는 `--no-cache`명령어를 붙여주면 된다.
-[관련 답변내용 link](https://stackoverflow.com/questions/35594987/how-to-force-docker-for-clean-build-of-an-image?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa)
-
-설치중에 `debconf: delaying package configuration, since apt-utils is not installed`이런 에러가 있었는데 해당 내용이 [링크](https://github.com/phusion/baseimage-docker/issues/319)에서 논의된 적이 있었고 일단 빌드가 완성되는 것으로 보아 별 문제가 없다고 판단 계속 진행하도록 하겠다. (추후 무슨 문제가 생겼을 경우 해결하기 위한 기록)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;elasticbeanstalk-구축하기&quot;&gt;elasticbeanstalk 구축하기&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;키페어 profile 설정문제&lt;/p&gt;
-
-    &lt;p&gt;awscli에서 사용하는 기본 프로파일은 환경변수로 설정되어 있다.
-&lt;code class=&quot;highlighter-rouge&quot;&gt;export AWS_PROFILE=user2&lt;/code&gt;명령을 통해 환경변수를 설정함으로써 매번 profile을 지정하지 않아도 된다.
-&lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-multiple-profiles.html&quot;&gt;관련링크&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;eb cli 환경에서 키페어 profile 설정문제&lt;/p&gt;
-
-    &lt;p&gt;eb cli를 사용 할 경우 추가적으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;export AWS_EB_PROFILE=user2&lt;/code&gt; 명령을 통해 eb default 환경변수를 설정해 주어야만 한다
-&lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-configuration.html#eb-cli3-profile&quot;&gt;관련링크&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;elasticbeanstalk에서 최신버전의 docker를 지원하지 않아 발생하는 문제라고 생각 -&amp;gt; docker를 삭제하고 다시 설치하기로 결정&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;삭제하려고 하는데 docker를 찾지 못함 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;dpkg -l | grep -i docker&lt;/code&gt; 명령어로 설치된 &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-ce&lt;/code&gt;확인후에 삭제
-&lt;a href=&quot;https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;특정버전의 docker를 설치 &lt;a href=&quot;https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;docker를 재설치 해도 같은문제가 발생했고, 문제는 &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;에 &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;이 포함되어 있기 때문이었다. -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;.ebignore&lt;/code&gt;추가&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;결론적으로는 docker의 버전이 다른게 문제가 되는지는 정확하기 확인하진 못했지만 그래도 일단 버전을 맞추는게 좋을 것으로 판단된다.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;request-한글-깨짐현상&quot;&gt;request 한글 깨짐현상&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Beautifulsoup 에서 깨지는걸로 생각했는데, request모듈에서의 encoding문제였다. 참고한 블로그와 사이트
-  &lt;a href=&quot;http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90&quot;&gt;http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90&lt;/a&gt;
-  &lt;a href=&quot;http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping&quot;&gt;http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;더 간단한 해결책 발견
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;request.text&lt;/code&gt; -&amp;gt; 값을 &lt;code class=&quot;highlighter-rouge&quot;&gt;unicode&lt;/code&gt;로 가져옴
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;request.content&lt;/code&gt; -&amp;gt; 값을 &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;형으로 가져옴
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;형으로 가져오면 간단하게 문자를 사용할 수 있다.
-  참고한 블로그
-  &lt;a href=&quot;http://pwnbit.kr/85&quot;&gt;http://pwnbit.kr/85&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;requestsexceptionstoomanyredirects-exceeded-30-redirects-에러-관련&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;requests.exceptions.TooManyRedirects: Exceeded 30 redirects.&lt;/code&gt; 에러 관련&lt;/h3&gt;
-
-&lt;h3 id=&quot;문자열에-탭이나-줄바꿈-문자-제거하는-것&quot;&gt;문자열에 탭이나, 줄바꿈 문자 제거하는 것&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/10711116/strip-spaces-tabs-newlines-python/10711166#comment25234743_10711116&quot;&gt;stackoverflow 답변&lt;/a&gt;
-  위의 답변들 중에 나는 아래의 방법으로 해결&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I want to Remove all white &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; spaces, new lines &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and tabs &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s+'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;'I want to Remove all white spaces, new lines and tabs '&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;input태그를-disabled-처럼-보이게-만들고-readonly-처럼-사용하기&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;태그를 disabled 처럼 보이게 만들고 readonly 처럼 사용하기&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/7743208/making-a-text-input-field-look-disabled-but-act-readonly&quot;&gt;stackoverflow 답변&lt;/a&gt;처럼 해결 할 수도 있을 것 같다.
-  다만 난 답변을 찾다가 django forms의 widget설정에서 readonly 옵션을 넣어봤더니 disabled와 같은 모습으로 템플릿에 나와서 그대로 사용했다.&lt;/p&gt;
-
-&lt;h3 id=&quot;crawler_testpy-python-script에서-django의-model-을-import하여-실행하기-위한-세팅&quot;&gt;crawler_test.py python script에서 django의 model 을 import하여 실행하기 위한 세팅&lt;/h3&gt;
-
-&lt;p&gt;django 자체를 import해서 어떤 환경변수를 설정해줘야만 사용할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;아래는 내가 적용했던 세팅&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  import os
-  import django
-
-  os.environ.setdefault(&quot;DJANGO_SETTINGS_MODULE&quot;, &quot;my_homepage.settings&quot;)
-  django.setup()
-
-  from main.models import NewsTitle
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/15048963/alternative-to-the-deprecated-setup-environ-for-one-off-django-scripts?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;참고한 stackoverflow 답변&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;celery-를-활용하여-크롤링한-데이터-저장하기&quot;&gt;celery 를 활용하여 크롤링한 데이터 저장하기&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;celery beat를 활용 -&amp;gt; 폐기
-    주기적으로 크롤링을 작동시켜서 크롤링한 데이터를 저장하려 했으나 elasticbeanstalk와 docker를 활용하여 배포할 경우 auto scaling시에 문제가 발생할 수 있다. (같은 ec2가 여러개 생길경우 인스턴스 갯수 마다 beat가 따로 동작하기 때문에 크롤링이 중복되는 문제 발생)
-    -&amp;gt; 데이터 생성시간을 체크해서 일정시간이 지나지 않았으면 작동하지않게 할 수도 있다. -&amp;gt; que요청과 시간을 확인하는 로직은 항상 들어가야 하기 때문에 delay보다 자원이 더 낭비될 가능성이 크다.&lt;/li&gt;
-  &lt;li&gt;celery delay 활용
-    created time field를 활용해 request마다 데이터베이스의 크롤링 데이터가 stale 한 경우 delay로 크롤링작업 실행. concurrency 문제가 발생할 수 있기 때문에 celery task 작동시에 database lock을 사용한다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;celery-docker에서-작동해보기---폐기&quot;&gt;celery docker에서 작동해보기 -&amp;gt; 폐기&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;default user는 locallhost환경으로만 접속가능하기 때문에 새로운 user를 만들어 줘야 한다.
-    &lt;code class=&quot;highlighter-rouge&quot;&gt;rabbitmqctl add_user username password&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;aws-sqs를-활용하여-celery를-사용하기로-함&quot;&gt;aws sqs를 활용하여 celery를 사용하기로 함&lt;/h3&gt;
-&lt;p&gt;celery 실행시 &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt;을 설치하라고 함, &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt; 을 설치하기 위해선 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install libcurl4-openssl-dev&lt;/code&gt; 명령어를 통해 &lt;code class=&quot;highlighter-rouge&quot;&gt;libcurl4-openssl-dev&lt;/code&gt;라는걸 설치해야만 함 설치후 로컬환경에서 잘 작동
-  &lt;a href=&quot;https://stackoverflow.com/questions/23937933/could-not-run-curl-config-errno-2-no-such-file-or-directory-when-installing&quot;&gt;pycurl 설치관련 stackoverflow 답변&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;elasticbeanstalk에서-내-도메인-이름-사용하기&quot;&gt;elasticbeanstalk에서 내 도메인 이름 사용하기&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;route53 등록전 name서버를 aws로 교체
-  &lt;a href=&quot;http://wingsnote.com/57&quot;&gt;참고 블로그&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;route53에서 내 도메인과 elb 도메인 연결하기
-  &lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/customdomains.html&quot;&gt;route 53 설명서&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;request-수정하기&quot;&gt;request 수정하기&lt;/h3&gt;
-&lt;p&gt;경향신문 크롤러에서 요청하면 산발적으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;page not found&lt;/code&gt;를 response 하는 경우가 발생했다. 이럴경우 기존에 beautifulsoup으로 크롤링 하는 구조에서
-  아래와 같은 에러를 뿜게된다.
-  에러&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    File &quot;/home/zoozoo/projects/project-hp/my_homepage/main/utils.py&quot;, line 230, in khan_news_title
-      title=soup.find('div', class_='topNews').a.text,
-    AttributeError: 'NoneType' object has no attribute 'a'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;try, except문으로 해결하려 했으나 조금 더 검색해 보니 request할 때 브라우저에서 확인하는 것과 같은 page를 받기 위해서는 header에 관련 내용을 함께
-  요청해야 한다는 것을 알게 되었다.
-  &lt;a href=&quot;https://stackoverflow.com/questions/27652543/how-to-use-python-requests-to-fake-a-browser-visit?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;stackoverflow 답변&lt;/a&gt;
-  아래와 같이 request의 header에 관련내용을 추가해 줌으로써 브라우져에서 확인하는 것과 같은 response를 받게 되었다.&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;n&quot;&gt;user_agent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'User-Agent'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user_agent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;req&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'http://www.khan.co.kr/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;elasticbeanstalk-single-docker-플랫폼에서-cloudwatch-logs-사용하여-로그-남기기&quot;&gt;elasticbeanstalk single docker 플랫폼에서 cloudwatch logs 사용하여 로그 남기기&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;elasticbeanstalk에서 ec2 인스턴스의 로그를 확인하기 위한 기본 방법은 설명서 나와있다.
-&lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/using-features.logging.html&quot;&gt;Elastic Beanstalk 환경의 Amazon EC2 인스턴스의 로그 보기&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;cloudwatch log를 사용하기 위해서는 2가지 방법중 하나를 선택해야만 한다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="record" /><summary type="html">나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.</summary></entry><entry><title type="html">Project Sangsang</title><link href="http://localhost:4000/2018-03-23/PROJECT-SANGSANG" rel="alternate" type="text/html" title="Project Sangsang" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-23/PROJECT-SANGSANG</id><content type="html" xml:base="http://localhost:4000/2018-03-23/PROJECT-SANGSANG">&lt;h1 id=&quot;작은방-미술-교습소-상상-홈페이지를-만들며-남긴-기록입니다&quot;&gt;작은방 미술 교습소 ‘상상’ 홈페이지를 만들며 남긴 기록입니다.&lt;/h1&gt;
-
-&lt;h2 id=&quot;진행사항에-대한-기록&quot;&gt;진행사항에 대한 기록&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;mdb free로 적용 안되는 기술 중 하나가 smmoth scroll, 대신에 w3s에서 알려주는 방법을 적용하면 됨&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;찾아보지-않고도-기억하고-싶은-부트스트랩-클래스&quot;&gt;찾아보지 않고도 기억하고 싶은 부트스트랩 클래스&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.sr-only&lt;/code&gt;
-&lt;a href=&quot;https://getbootstrap.com/docs/4.0/utilities/screenreaders/&quot;&gt;문서&lt;/a&gt;에 보면 아래와 같이 확인할 수 있다.
-    &lt;blockquote&gt;
-      &lt;p&gt;Use screenreader utilities to hide elements on all devices except screen readers.&lt;/p&gt;
-    &lt;/blockquote&gt;
-
-    &lt;p&gt;페이지에 label 없이 input태그를 사용하려고 할 때 스크린리더와 관련된 문제가 생길 수 있다. 스크린리더가 페이지를 읽어 나갈 때 input태그에 label을 붙이지 않는다면 온란을 겪기 때문에 label을 붙여줘야 한다. 그래서 위와같은 문제를 &lt;code class=&quot;highlighter-rouge&quot;&gt;sr_only&lt;/code&gt;클래스를 통해 해결해주는 것&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mt-4&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;my-5&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;mb-1&lt;/code&gt; 등
-    &lt;ul&gt;
-      &lt;li&gt;bootstrap의 spacing utilities에서 확인할 수 있다.&lt;a href=&quot;https://getbootstrap.com/docs/4.0/utilities/spacing/&quot;&gt;문서&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;첫 번째 단어는 mrgin과 padding을 구분하고 두 번째 단어는 방향을 가리킨다.&lt;/li&gt;
-      &lt;li&gt;숫자는 정도의 차이를 가리킨다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;w-25&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;h-50&lt;/code&gt;등
-    &lt;ul&gt;
-      &lt;li&gt;sizing에서 확인할 수 있다.&lt;a href=&quot;https://getbootstrap.com/docs/4.0/utilities/sizing//&quot;&gt;문서&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;요소의 크기를 조절 할 수 있는 도구&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fa&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;fa-book&lt;/code&gt;등
-    &lt;ul&gt;
-      &lt;li&gt;bootstrap아이콘을 사용하는 태그(font awesome icon)&lt;/li&gt;
-      &lt;li&gt;mdb &lt;a href=&quot;https://mdbootstrap.com/content/icons-list/&quot;&gt;문서&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;화면에서-보여주는-것-중에-이름을-몰라서-검색이-어려웠던-웹-테크닉&quot;&gt;화면에서 보여주는 것 중에 이름을 몰라서 검색이 어려웠던 웹 테크닉&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Parallax(시차를 이용한 효과)
-    &lt;ul&gt;
-      &lt;li&gt;스크롤 하면 아래에 있는 요소가 위의 요소를 덮어나가는 것 같이 보이게 하는 기술&lt;/li&gt;
-      &lt;li&gt;생활코딩에서 알려주는 웹 레시피에 관련 설명 &lt;a href=&quot;https://opentutorials.org/module/2398/13856&quot;&gt;링크&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;기본적으로 css에서 background의 이미지를 고정 시켜서 효과를 내는 것&lt;/li&gt;
-      &lt;li&gt;mdb의 랜딩페이지 튜토리얼 에서는 &lt;code class=&quot;highlighter-rouge&quot;&gt;background: url(&quot;./bg.jpg&quot;)no-repeat center center fixed;&lt;/code&gt;와 같이 background를 fixed 효과를 넣음으로서 parallax효과를 주었다.&lt;/li&gt;
-      &lt;li&gt;생활코딩이나 w3s에서는&lt;code class=&quot;highlighter-rouge&quot;&gt;background-attachment: fixed;&lt;/code&gt;를 적용시켜서 관련 효과를 적용하는 방법을 선택했다.&lt;/li&gt;
-      &lt;li&gt;랜딩페이지 튜토리얼의 방법은 속성으로 적용하는 방법이다. &lt;a href=&quot;https://www.w3schools.com/css/css_background.asp&quot;&gt;w3s에서 css background에 관한 설명 링크&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;css-margin과-padding의-차이&quot;&gt;CSS margin과 padding의 차이&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;둘다 여백을 활용하기 위한 공간&lt;/li&gt;
-  &lt;li&gt;태그요소의 비어있는 공간을 넣어줄 때 사용한다&lt;/li&gt;
-  &lt;li&gt;border를 기준으로 padding은 border의 안쪽에 위치, margin은 border의 바깥쪽에 위치
-    &lt;ul&gt;
-      &lt;li&gt;border는 box에서 경계면을 의미하며 경계면 안쪽은 콘텐츠에 포함된 영역이다.(background에 포함된 영역이 padding)&lt;/li&gt;
-      &lt;li&gt;요소 경계면의 안쪽에 여백을 주느냐(padding), 요소 경계면의 바깥쪽에 여백을 주느냐(margin)에 따라 사용법을 구분할 수 있다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;콘텐츠를 제외한 나머지 영역을 margin으로 보면 된다.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://veamcamp.com/cookbook/padding_margin/&quot;&gt;참고 사이트&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;div안에-있는-요소를-정렬하기수평정렬&quot;&gt;div안에 있는 요소를 정렬하기(수평정렬)&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;align속성을 사용해서 정렬할 수 있다.&lt;/li&gt;
-  &lt;li&gt;예) &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div align=&quot;center&quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;w3s의 내용설명 &lt;a href=&quot;https://www.w3schools.com/tags/att_div_align.asp&quot;&gt;링크&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="record" /><summary type="html">작은방 미술 교습소 ‘상상’ 홈페이지를 만들며 남긴 기록입니다.</summary></entry><entry><title type="html">기술면접준비</title><link href="http://localhost:4000/2018-03-23/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84" rel="alternate" type="text/html" title="기술면접준비" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-23/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="http://localhost:4000/2018-03-23/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="record" /><summary type="html">나의 여행기 기록 SNS EXPLOG를 개발하며 기록해 놓은 자료입니다.</summary></entry><entry><title type="html">기술면접준비</title><link href="http://localhost:4000/2018-03-23/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84" rel="alternate" type="text/html" title="기술면접준비" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-23/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="http://localhost:4000/2018-03-23/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
 
 &lt;p&gt;면접을 위해 따로 공부하는 것 보다는, 열심히 공부한 내용을 바탕으로 면접에서 내 능력을 잘 보여주는 것을 더 선호한다. 면접을 위한 공부가 취업 말고는 무슨 필요가 있겠냐는 생각을 가지고 있었다. 그런데 개발자로 이직하기 위해서 면접을 준비하면서 느낀점은 기술면접의 경우 면접준비 자체가 내 실력을 향상시키는 데에 도움이 되겠다는 생각을 가질 수 있었다. 단편적으로 ‘A는 B입니다.’라고 답변할 수도 있겠지만 한단계씩 더 깊이 물어보는 질문에 답변할 수 있으려면 기술에 대한 더 깊은 지식이 필요하기 때문이다.&lt;/p&gt;
 
@@ -3285,4 +2805,484 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
       &lt;li&gt;다형성의 쉬운 예제는 Java의 오버로딩이다. 오버로딩은 같은 의미지만 매개변수의 데이터타입이 무엇이냐에 따라서 다른 메소드가 호출되는 방식이다. &lt;a href=&quot;https://opentutorials.org/course/1223/6127&quot;&gt;참고&lt;/a&gt; (참고로 파이썬은 오버로딩을 허용하지 않는다.)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="record" /><summary type="html">Intro</summary></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author><category term="record" /><summary type="html">Intro</summary></entry><entry><title type="html">Project Sangsang</title><link href="http://localhost:4000/2018-03-23/PROJECT-SANGSANG" rel="alternate" type="text/html" title="Project Sangsang" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-23/PROJECT-SANGSANG</id><content type="html" xml:base="http://localhost:4000/2018-03-23/PROJECT-SANGSANG">&lt;h1 id=&quot;작은방-미술-교습소-상상-홈페이지를-만들며-남긴-기록입니다&quot;&gt;작은방 미술 교습소 ‘상상’ 홈페이지를 만들며 남긴 기록입니다.&lt;/h1&gt;
+
+&lt;h2 id=&quot;진행사항에-대한-기록&quot;&gt;진행사항에 대한 기록&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;mdb free로 적용 안되는 기술 중 하나가 smmoth scroll, 대신에 w3s에서 알려주는 방법을 적용하면 됨&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;찾아보지-않고도-기억하고-싶은-부트스트랩-클래스&quot;&gt;찾아보지 않고도 기억하고 싶은 부트스트랩 클래스&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.sr-only&lt;/code&gt;
+&lt;a href=&quot;https://getbootstrap.com/docs/4.0/utilities/screenreaders/&quot;&gt;문서&lt;/a&gt;에 보면 아래와 같이 확인할 수 있다.
+    &lt;blockquote&gt;
+      &lt;p&gt;Use screenreader utilities to hide elements on all devices except screen readers.&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;p&gt;페이지에 label 없이 input태그를 사용하려고 할 때 스크린리더와 관련된 문제가 생길 수 있다. 스크린리더가 페이지를 읽어 나갈 때 input태그에 label을 붙이지 않는다면 온란을 겪기 때문에 label을 붙여줘야 한다. 그래서 위와같은 문제를 &lt;code class=&quot;highlighter-rouge&quot;&gt;sr_only&lt;/code&gt;클래스를 통해 해결해주는 것&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mt-4&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;my-5&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;mb-1&lt;/code&gt; 등
+    &lt;ul&gt;
+      &lt;li&gt;bootstrap의 spacing utilities에서 확인할 수 있다.&lt;a href=&quot;https://getbootstrap.com/docs/4.0/utilities/spacing/&quot;&gt;문서&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;첫 번째 단어는 mrgin과 padding을 구분하고 두 번째 단어는 방향을 가리킨다.&lt;/li&gt;
+      &lt;li&gt;숫자는 정도의 차이를 가리킨다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;w-25&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;h-50&lt;/code&gt;등
+    &lt;ul&gt;
+      &lt;li&gt;sizing에서 확인할 수 있다.&lt;a href=&quot;https://getbootstrap.com/docs/4.0/utilities/sizing//&quot;&gt;문서&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;요소의 크기를 조절 할 수 있는 도구&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fa&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;fa-book&lt;/code&gt;등
+    &lt;ul&gt;
+      &lt;li&gt;bootstrap아이콘을 사용하는 태그(font awesome icon)&lt;/li&gt;
+      &lt;li&gt;mdb &lt;a href=&quot;https://mdbootstrap.com/content/icons-list/&quot;&gt;문서&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;화면에서-보여주는-것-중에-이름을-몰라서-검색이-어려웠던-웹-테크닉&quot;&gt;화면에서 보여주는 것 중에 이름을 몰라서 검색이 어려웠던 웹 테크닉&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Parallax(시차를 이용한 효과)
+    &lt;ul&gt;
+      &lt;li&gt;스크롤 하면 아래에 있는 요소가 위의 요소를 덮어나가는 것 같이 보이게 하는 기술&lt;/li&gt;
+      &lt;li&gt;생활코딩에서 알려주는 웹 레시피에 관련 설명 &lt;a href=&quot;https://opentutorials.org/module/2398/13856&quot;&gt;링크&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;기본적으로 css에서 background의 이미지를 고정 시켜서 효과를 내는 것&lt;/li&gt;
+      &lt;li&gt;mdb의 랜딩페이지 튜토리얼 에서는 &lt;code class=&quot;highlighter-rouge&quot;&gt;background: url(&quot;./bg.jpg&quot;)no-repeat center center fixed;&lt;/code&gt;와 같이 background를 fixed 효과를 넣음으로서 parallax효과를 주었다.&lt;/li&gt;
+      &lt;li&gt;생활코딩이나 w3s에서는&lt;code class=&quot;highlighter-rouge&quot;&gt;background-attachment: fixed;&lt;/code&gt;를 적용시켜서 관련 효과를 적용하는 방법을 선택했다.&lt;/li&gt;
+      &lt;li&gt;랜딩페이지 튜토리얼의 방법은 속성으로 적용하는 방법이다. &lt;a href=&quot;https://www.w3schools.com/css/css_background.asp&quot;&gt;w3s에서 css background에 관한 설명 링크&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;css-margin과-padding의-차이&quot;&gt;CSS margin과 padding의 차이&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;둘다 여백을 활용하기 위한 공간&lt;/li&gt;
+  &lt;li&gt;태그요소의 비어있는 공간을 넣어줄 때 사용한다&lt;/li&gt;
+  &lt;li&gt;border를 기준으로 padding은 border의 안쪽에 위치, margin은 border의 바깥쪽에 위치
+    &lt;ul&gt;
+      &lt;li&gt;border는 box에서 경계면을 의미하며 경계면 안쪽은 콘텐츠에 포함된 영역이다.(background에 포함된 영역이 padding)&lt;/li&gt;
+      &lt;li&gt;요소 경계면의 안쪽에 여백을 주느냐(padding), 요소 경계면의 바깥쪽에 여백을 주느냐(margin)에 따라 사용법을 구분할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;콘텐츠를 제외한 나머지 영역을 margin으로 보면 된다.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://veamcamp.com/cookbook/padding_margin/&quot;&gt;참고 사이트&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;div안에-있는-요소를-정렬하기수평정렬&quot;&gt;div안에 있는 요소를 정렬하기(수평정렬)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;align속성을 사용해서 정렬할 수 있다.&lt;/li&gt;
+  &lt;li&gt;예) &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div align=&quot;center&quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;w3s의 내용설명 &lt;a href=&quot;https://www.w3schools.com/tags/att_div_align.asp&quot;&gt;링크&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="record" /><summary type="html">작은방 미술 교습소 ‘상상’ 홈페이지를 만들며 남긴 기록입니다.</summary></entry><entry><title type="html">Project News Collecter</title><link href="http://localhost:4000/2018-03-23/PROJECT-NEWS-COLLECTER" rel="alternate" type="text/html" title="Project News Collecter" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-23/PROJECT-NEWS-COLLECTER</id><content type="html" xml:base="http://localhost:4000/2018-03-23/PROJECT-NEWS-COLLECTER">&lt;h1 id=&quot;나만의-뉴스-스탠드-news-collecter-프로젝트를-진행하며-기록해-놓은-자료입니다&quot;&gt;나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Custom Homepage Project &lt;a href=&quot;https://www.news-collecter.com/&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/strong&gt;
+홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.
+주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;참고한-사이트-모음&quot;&gt;참고한 사이트 모음&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.codeproject.com/Articles/546960/HTML-Quick-Start-Web-Application&quot;&gt;html 레이아웃 관련&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;프로젝트 Github : https://github.com/zooozoo/homepage-project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;if statement에서 else를 쓰는게 좋은지 아니면 그냥 return 하는게 좋은지에 관한 이야기, 속도나 기능적인 부분에서 차이는 없고
+얼마나 읽기 편한지와같은 문제가 고려되는데 else를 쓰기보다는 바로 return하는 방식이 더 좋다는 의견이 많다. 관련 논쟁 스택오버플로우 링크
+&lt;a href=&quot;https://stackoverflow.com/questions/14844531/is-it-preferable-to-use-an-else-in-python-when-its-not-necessary&quot;&gt;https://stackoverflow.com/questions/14844531/is-it-preferable-to-use-an-else-in-python-when-its-not-necessary&lt;/a&gt;
+&lt;a href=&quot;https://stackoverflow.com/questions/9191388/it-is-more-efficient-to-use-if-return-return-or-if-else-return&quot;&gt;https://stackoverflow.com/questions/9191388/it-is-more-efficient-to-use-if-return-return-or-if-else-return&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;다음-단계&quot;&gt;다음 단계&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;user과 화면에서 동적으로 언론사 배치순서를 조정할 수 있도록 만들기&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;task.py 에서 버전 삭제로직 변경해야함 -&amp;gt; 전체를 삭제하는 것이 아닌 특정 버전 이하는 모두 삭제할 수 있게끔&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;나중에-해야할-일&quot;&gt;나중에 해야할 일&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;header 파트 레이아웃 리팩터링 필요
+-&amp;gt; 부트스트랩 레이아웃 사용해서 해결&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;크롤링한 데이터에서 ‘문답’과 같은 요소들 없애기
+-&amp;gt; 글자수에 조건을 걸어서 해결&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;nav에 news_select_section에서 한글로 언론사이름 보여줄 수 있게 수정
+-&amp;gt; filed에 verbose name 설정하고, index.html의 card header 부분에 field.name을 field.value로 변경해서 해결&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;main에 checkbox form에 initial data 전달하는거 더 효율적으로 할 수 있는지 살펴보기
+-&amp;gt; model form 이기 때문에 데이터베이스에서 가져온 모델 인스턴스를 전달함으로써 initiated된 폼을 사용할 수 있음&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;에러가 나면 데이터베이스에 있는 내용을 끌어올 수 있도록 만들기&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;news-select-section에 있는 checkbox를 1열 래이아웃으로 바꾸기&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;산발적으로 발생하는 에러 잡기
+에러&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  File &quot;/home/zoozoo/projects/project-hp/my_homepage/main/utils.py&quot;, line 230, in khan_news_title
+    title=soup.find('div', class_='topNews').a.text,
+  AttributeError: 'NoneType' object has no attribute 'a'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;개발과정에-대한-기록&quot;&gt;개발과정에 대한 기록&lt;/h2&gt;
+
+&lt;h3 id=&quot;배포를-위한-기본-세팅&quot;&gt;배포를 위한 기본 세팅&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;aws계정 생성&lt;/li&gt;
+  &lt;li&gt;IAM 유저와, 보안그룹 생성&lt;/li&gt;
+  &lt;li&gt;aws cli를 활용해 기본정보 등록&lt;/li&gt;
+  &lt;li&gt;local 에서 postgres 연결 확인&lt;/li&gt;
+  &lt;li&gt;settings 를 패키지로 만들고 deploy 와 dev용 setting 모듈 분리&lt;/li&gt;
+  &lt;li&gt;RDS, S3와 연결되고 로컬에서 80번port로 접속 가능한 docker만들기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;docker를-만드는-과정에서-있었던-일&quot;&gt;docker를 만드는 과정에서 있었던 일&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker를 만드는 과정에서 basedocker를 새로 구성할 필요가 있어서 간단하게 새 명령어를 집어넣고 새로 buil를 하는데 pyenv를 의존성문제를 해결하기 위한 구성을 다울로드 하는 과정에 에러가 발생했다.
+
+```
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.04_all.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-amdgpu1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-intel1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-nouveau2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-radeon1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libglapi-mesa_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-dri_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-glx_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.0.2g-1ubuntu4.8_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-doc_1.0.2g-1ubuntu4.8_all.deb  404  Not Found [IP: 91.189.88.152 80]
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+The command '/bin/sh -c apt-get install -y make build-essential             libssl-dev zlib1g-dev libbz2-dev             libreadline-dev libsqlite3-dev wget             curl llvm libncurses5-dev libncursesw5-dev             xz-utils tk-dev' returned a non-zero code: 100
+```
+
+대략 이런 에러였는데 `apt-get update`부분을 살펴보니 이전에 같은 태그명으로 생성했던 적이 있어서 캐시를 사용해 build 하는 것을 확인했다. 캐쉬를 쓰지 않고 생으로 docker를 빌드하기 위한 명령어는 `--no-cache`명령어를 붙여주면 된다.
+[관련 답변내용 link](https://stackoverflow.com/questions/35594987/how-to-force-docker-for-clean-build-of-an-image?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa)
+
+설치중에 `debconf: delaying package configuration, since apt-utils is not installed`이런 에러가 있었는데 해당 내용이 [링크](https://github.com/phusion/baseimage-docker/issues/319)에서 논의된 적이 있었고 일단 빌드가 완성되는 것으로 보아 별 문제가 없다고 판단 계속 진행하도록 하겠다. (추후 무슨 문제가 생겼을 경우 해결하기 위한 기록)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;elasticbeanstalk-구축하기&quot;&gt;elasticbeanstalk 구축하기&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;키페어 profile 설정문제&lt;/p&gt;
+
+    &lt;p&gt;awscli에서 사용하는 기본 프로파일은 환경변수로 설정되어 있다.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;export AWS_PROFILE=user2&lt;/code&gt;명령을 통해 환경변수를 설정함으로써 매번 profile을 지정하지 않아도 된다.
+&lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-multiple-profiles.html&quot;&gt;관련링크&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;eb cli 환경에서 키페어 profile 설정문제&lt;/p&gt;
+
+    &lt;p&gt;eb cli를 사용 할 경우 추가적으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;export AWS_EB_PROFILE=user2&lt;/code&gt; 명령을 통해 eb default 환경변수를 설정해 주어야만 한다
+&lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-configuration.html#eb-cli3-profile&quot;&gt;관련링크&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;elasticbeanstalk에서 최신버전의 docker를 지원하지 않아 발생하는 문제라고 생각 -&amp;gt; docker를 삭제하고 다시 설치하기로 결정&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;삭제하려고 하는데 docker를 찾지 못함 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;dpkg -l | grep -i docker&lt;/code&gt; 명령어로 설치된 &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-ce&lt;/code&gt;확인후에 삭제
+&lt;a href=&quot;https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;특정버전의 docker를 설치 &lt;a href=&quot;https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;docker를 재설치 해도 같은문제가 발생했고, 문제는 &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;에 &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;이 포함되어 있기 때문이었다. -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;.ebignore&lt;/code&gt;추가&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;결론적으로는 docker의 버전이 다른게 문제가 되는지는 정확하기 확인하진 못했지만 그래도 일단 버전을 맞추는게 좋을 것으로 판단된다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;request-한글-깨짐현상&quot;&gt;request 한글 깨짐현상&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Beautifulsoup 에서 깨지는걸로 생각했는데, request모듈에서의 encoding문제였다. 참고한 블로그와 사이트
+  &lt;a href=&quot;http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90&quot;&gt;http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90&lt;/a&gt;
+  &lt;a href=&quot;http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping&quot;&gt;http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;더 간단한 해결책 발견
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;request.text&lt;/code&gt; -&amp;gt; 값을 &lt;code class=&quot;highlighter-rouge&quot;&gt;unicode&lt;/code&gt;로 가져옴
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;request.content&lt;/code&gt; -&amp;gt; 값을 &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;형으로 가져옴
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;형으로 가져오면 간단하게 문자를 사용할 수 있다.
+  참고한 블로그
+  &lt;a href=&quot;http://pwnbit.kr/85&quot;&gt;http://pwnbit.kr/85&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;requestsexceptionstoomanyredirects-exceeded-30-redirects-에러-관련&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;requests.exceptions.TooManyRedirects: Exceeded 30 redirects.&lt;/code&gt; 에러 관련&lt;/h3&gt;
+
+&lt;h3 id=&quot;문자열에-탭이나-줄바꿈-문자-제거하는-것&quot;&gt;문자열에 탭이나, 줄바꿈 문자 제거하는 것&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/10711116/strip-spaces-tabs-newlines-python/10711166#comment25234743_10711116&quot;&gt;stackoverflow 답변&lt;/a&gt;
+  위의 답변들 중에 나는 아래의 방법으로 해결&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I want to Remove all white &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; spaces, new lines &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and tabs &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s+'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;'I want to Remove all white spaces, new lines and tabs '&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;input태그를-disabled-처럼-보이게-만들고-readonly-처럼-사용하기&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;태그를 disabled 처럼 보이게 만들고 readonly 처럼 사용하기&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/7743208/making-a-text-input-field-look-disabled-but-act-readonly&quot;&gt;stackoverflow 답변&lt;/a&gt;처럼 해결 할 수도 있을 것 같다.
+  다만 난 답변을 찾다가 django forms의 widget설정에서 readonly 옵션을 넣어봤더니 disabled와 같은 모습으로 템플릿에 나와서 그대로 사용했다.&lt;/p&gt;
+
+&lt;h3 id=&quot;crawler_testpy-python-script에서-django의-model-을-import하여-실행하기-위한-세팅&quot;&gt;crawler_test.py python script에서 django의 model 을 import하여 실행하기 위한 세팅&lt;/h3&gt;
+
+&lt;p&gt;django 자체를 import해서 어떤 환경변수를 설정해줘야만 사용할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;아래는 내가 적용했던 세팅&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  import os
+  import django
+
+  os.environ.setdefault(&quot;DJANGO_SETTINGS_MODULE&quot;, &quot;my_homepage.settings&quot;)
+  django.setup()
+
+  from main.models import NewsTitle
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/15048963/alternative-to-the-deprecated-setup-environ-for-one-off-django-scripts?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;참고한 stackoverflow 답변&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;celery-를-활용하여-크롤링한-데이터-저장하기&quot;&gt;celery 를 활용하여 크롤링한 데이터 저장하기&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;celery beat를 활용 -&amp;gt; 폐기
+    주기적으로 크롤링을 작동시켜서 크롤링한 데이터를 저장하려 했으나 elasticbeanstalk와 docker를 활용하여 배포할 경우 auto scaling시에 문제가 발생할 수 있다. (같은 ec2가 여러개 생길경우 인스턴스 갯수 마다 beat가 따로 동작하기 때문에 크롤링이 중복되는 문제 발생)
+    -&amp;gt; 데이터 생성시간을 체크해서 일정시간이 지나지 않았으면 작동하지않게 할 수도 있다. -&amp;gt; que요청과 시간을 확인하는 로직은 항상 들어가야 하기 때문에 delay보다 자원이 더 낭비될 가능성이 크다.&lt;/li&gt;
+  &lt;li&gt;celery delay 활용
+    created time field를 활용해 request마다 데이터베이스의 크롤링 데이터가 stale 한 경우 delay로 크롤링작업 실행. concurrency 문제가 발생할 수 있기 때문에 celery task 작동시에 database lock을 사용한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;celery-docker에서-작동해보기---폐기&quot;&gt;celery docker에서 작동해보기 -&amp;gt; 폐기&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;default user는 locallhost환경으로만 접속가능하기 때문에 새로운 user를 만들어 줘야 한다.
+    &lt;code class=&quot;highlighter-rouge&quot;&gt;rabbitmqctl add_user username password&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;aws-sqs를-활용하여-celery를-사용하기로-함&quot;&gt;aws sqs를 활용하여 celery를 사용하기로 함&lt;/h3&gt;
+&lt;p&gt;celery 실행시 &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt;을 설치하라고 함, &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt; 을 설치하기 위해선 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install libcurl4-openssl-dev&lt;/code&gt; 명령어를 통해 &lt;code class=&quot;highlighter-rouge&quot;&gt;libcurl4-openssl-dev&lt;/code&gt;라는걸 설치해야만 함 설치후 로컬환경에서 잘 작동
+  &lt;a href=&quot;https://stackoverflow.com/questions/23937933/could-not-run-curl-config-errno-2-no-such-file-or-directory-when-installing&quot;&gt;pycurl 설치관련 stackoverflow 답변&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;elasticbeanstalk에서-내-도메인-이름-사용하기&quot;&gt;elasticbeanstalk에서 내 도메인 이름 사용하기&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;route53 등록전 name서버를 aws로 교체
+  &lt;a href=&quot;http://wingsnote.com/57&quot;&gt;참고 블로그&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;route53에서 내 도메인과 elb 도메인 연결하기
+  &lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/customdomains.html&quot;&gt;route 53 설명서&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;request-수정하기&quot;&gt;request 수정하기&lt;/h3&gt;
+&lt;p&gt;경향신문 크롤러에서 요청하면 산발적으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;page not found&lt;/code&gt;를 response 하는 경우가 발생했다. 이럴경우 기존에 beautifulsoup으로 크롤링 하는 구조에서
+  아래와 같은 에러를 뿜게된다.
+  에러&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    File &quot;/home/zoozoo/projects/project-hp/my_homepage/main/utils.py&quot;, line 230, in khan_news_title
+      title=soup.find('div', class_='topNews').a.text,
+    AttributeError: 'NoneType' object has no attribute 'a'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;try, except문으로 해결하려 했으나 조금 더 검색해 보니 request할 때 브라우저에서 확인하는 것과 같은 page를 받기 위해서는 header에 관련 내용을 함께
+  요청해야 한다는 것을 알게 되었다.
+  &lt;a href=&quot;https://stackoverflow.com/questions/27652543/how-to-use-python-requests-to-fake-a-browser-visit?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;stackoverflow 답변&lt;/a&gt;
+  아래와 같이 request의 header에 관련내용을 추가해 줌으로써 브라우져에서 확인하는 것과 같은 response를 받게 되었다.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;n&quot;&gt;user_agent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'User-Agent'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user_agent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;req&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'http://www.khan.co.kr/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;elasticbeanstalk-single-docker-플랫폼에서-cloudwatch-logs-사용하여-로그-남기기&quot;&gt;elasticbeanstalk single docker 플랫폼에서 cloudwatch logs 사용하여 로그 남기기&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;elasticbeanstalk에서 ec2 인스턴스의 로그를 확인하기 위한 기본 방법은 설명서 나와있다.
+&lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/using-features.logging.html&quot;&gt;Elastic Beanstalk 환경의 Amazon EC2 인스턴스의 로그 보기&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;cloudwatch log를 사용하기 위해서는 2가지 방법중 하나를 선택해야만 한다.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="record" /><summary type="html">나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.</summary></entry><entry><title type="html">Nginx</title><link href="http://localhost:4000/2018-03-23/NGINX" rel="alternate" type="text/html" title="Nginx" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/2018-03-23/NGINX</id><content type="html" xml:base="http://localhost:4000/2018-03-23/NGINX">&lt;h2 id=&quot;생활코딩-nginx강의&quot;&gt;생활코딩 Nginx강의&lt;/h2&gt;
+
+&lt;p&gt;아래의 내용은 egoing님이 강의하시는 opentutorials의 NGINX강의에서 발췌한 것 입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://opentutorials.org/module/384/3462&quot;&gt;강의 링크&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;1강-nginx-소개&quot;&gt;1강 Nginx 소개&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;웹, 클라이언트와 서버간의 관계에 대한 설명&lt;/li&gt;
+  &lt;li&gt;HTTP에 대한 소개&lt;/li&gt;
+  &lt;li&gt;Web server -&amp;gt; HTTP라고도 할 수 있다.&lt;/li&gt;
+  &lt;li&gt;웹서버의 역사
+    &lt;ul&gt;
+      &lt;li&gt;아파치의 압도적인 점유율&lt;/li&gt;
+      &lt;li&gt;그러나 최근들어서 점점 아파치의 점유율을 따라오고 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Nginx는 차세대 웹서버 - 더 적은 자원으로 더 빠르게 데이터를 서비스할 수 있는 경량화된 웹서버&lt;/li&gt;
+  &lt;li&gt;Document Root : &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/share/nginx/html/&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;설정파일: &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;conf.d&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;default.conf&lt;/code&gt;에는 nginx의 기본 설정이 있다.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;conf.d&lt;/code&gt;는 이름이 달라질 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;로그파일: &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/log/nginx/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2강-nginx-컴파일&quot;&gt;2강 Nginx 컴파일&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;컴파일하는 방법, 의존성 등의 문제가있는 난이도가 있음&lt;/li&gt;
+  &lt;li&gt;Nginx 모듈을 컴파일을 통해서만 설치할 수 있기 때문에 알아두면 좋다&lt;/li&gt;
+  &lt;li&gt;Nginx는 세가지 버전이 있다.
+    &lt;ul&gt;
+      &lt;li&gt;안전버전 : 실제 배포할 때&lt;/li&gt;
+      &lt;li&gt;개발버전: 개발할 때 / 버그가 발생할 수 있다.&lt;/li&gt;
+      &lt;li&gt;레거시버전: 예전버전의 Nginx&lt;/li&gt;
+      &lt;li&gt;안전버전의 설치가 권장된다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Nginx는 마스터 프로세스(Master Process)와 작업자 프로세스(Worker Process)를 가지고 있다.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ps aux | grep nginx&lt;/code&gt;를 실행해보면 아래와 같은 프로세스가 떠있을 것이다.&lt;/li&gt;
+      &lt;li&gt;마스터 프로세스는 루트 계정으로 실행되면서 80, 443 포트의 소켓과의 통신을 담당한다.&lt;/li&gt;
+      &lt;li&gt;작업자 프로세스는 실제로 데이터를 처리하는 프로세스라고 할 수 있는데 이 프로세스를 핸들링할 사용자를 만들어야 한다. 일반적으로 웹서버의 워커 유저는 www-data를 사용한다. www-data를 만드는 법은 아래와 같다.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;useradd --shell /usr/sbin/nologin www-data&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3강-php-fpm-mysql-1&quot;&gt;3강 PHP-FPM-MYSQL 1&lt;/h2&gt;
+
+&lt;h3 id=&quot;cgi&quot;&gt;CGI&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CGI는 Common Gateway Interface의 약자로 웹서버와 외부 프로그램을 연결해주는 표준화된 프로토콜이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/384/1398.gif&quot; alt=&quot;cgi based server&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fastcgi&quot;&gt;FastCGI&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CGI 는 하나의 요청(Request)에 하나의 프로세스를 생성한다. 이것은 프로세스를 생성하고 삭제하는 과정에서 많은 부하가 발생한다. 당연히 느리다. 이를 개선하기 위해서 등장한 것이 FastCGI이다. FastCGI는 요청이 있을 때마다 프로세스가 만들어지는 것이 아니라 만들어진 프로세스가 계속해서 새로운 요청들을 처리한다. 덕분에 프로세스를 생성하고 제거하는데 들어가는 부하가 줄어든다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/384/1397.gif&quot; alt=&quot;cgi based server&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3강-php-fpm-mysql-2&quot;&gt;3강 PHP-FPM-MYSQL 2&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;FPM, 과 MYSQL을 설치를 한 후에는 Nginx를 설정해 줘야 하는데 설정파일은 &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/conf.d/default.conf&lt;/code&gt; 이거나 &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/sites-available/default&lt;/code&gt;에 있다.&lt;/li&gt;
+  &lt;li&gt;socker - fastcgi_pass는 php-fpm과 NGINX를 연결하기 위한 인터페이스를 지정하는 것.&lt;/li&gt;
+  &lt;li&gt;Upstream Module - Upstream Module는 NGINX를 일종의 부하분배장치(Load Balancer)로 이용할 수 있게 해주는 NGINX의 모듈이다. 자세한 내용은 Upstream Module를 참고한다. &lt;a href=&quot;http://opentutorials.org/module/384/4328&quot;&gt;Upstream Module 바로가기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4강-php-fpm-mysql-3&quot;&gt;4강 PHP-FPM-MYSQL 3&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PHP를 Nginx와 독립된 별도의 서버에 설치하여 연결하는 것을 설명&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5강-nginx-환경설정&quot;&gt;5강 NGINX 환경설정&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Nginx 설정파일은 conf 디렉토리 아래에 위치하고, 설치 바업에 따라서 설정파일의 위치가 다를 수 있다.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;컴파일을 통해 설치할 경우 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/nginx/conf&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;을 이용해서 우분투에 설치할 경우 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;설정파일 위치를 찾는 명령어
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo find / -name nginx.conf&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;설정파일의 역할&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;nginx.conf : 메인 설정 파일.&lt;/li&gt;
+      &lt;li&gt;fcgi.conf : FastCGI 환경설정 파일&lt;/li&gt;
+      &lt;li&gt;sites-enabled : 활성화된 사이트들의 설정 파일들이 위치. 아파치에서는 Virtual host의 설정에 해당한다. 기본적으로 존재하지 않을수도 있다. 이 디렉토리를 직접 만들어서 사용하는 방법은 &lt;a href=&quot;http://opentutorials.org/module/384/4529&quot;&gt;가상 호스팅&lt;/a&gt;편에서 알아본다.&lt;/li&gt;
+      &lt;li&gt;sites-available : 비활성화된 사이트들의 설정 파일들이 위치&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;아래의 Nginx 메인 환경설정 파일인 &lt;code class=&quot;highlighter-rouge&quot;&gt;nginx.conf&lt;/code&gt;의 내용을 파해치며 Nginx의 환경설정을 이해해 나가보자&lt;/p&gt;
+
+    &lt;div class=&quot;language-nginx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;worker_processes&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;events&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kn&quot;&gt;worker_connections&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;http&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kn&quot;&gt;include&lt;/span&gt;       &lt;span class=&quot;s&quot;&gt;mime.types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kn&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kn&quot;&gt;listen&lt;/span&gt;       &lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kn&quot;&gt;root&lt;/span&gt;   &lt;span class=&quot;s&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;kn&quot;&gt;index&lt;/span&gt;  &lt;span class=&quot;s&quot;&gt;index.html&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;index.htm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;h3 id=&quot;core-모듈-설정&quot;&gt;Core 모듈 설정&lt;/h3&gt;
+
+    &lt;p&gt;위의 예의 work_processes와 같은 지시자 설정 파일 최상단에 위치하면서 nginx의 기본적인 동작 방식을 정의한다. 여기서 사용되는 지시어들은 다른 곳에서 사용되지 않는다. &lt;a href=&quot;http://opentutorials.org/module/384/4533&quot;&gt;코어모듈 지시어 사전&lt;/a&gt;을 참고하자.&lt;/p&gt;
+
+    &lt;h3 id=&quot;http-블록&quot;&gt;http 블록&lt;/h3&gt;
+
+    &lt;p&gt;http 블록은 이후에 소개할 server, location의 루트 블록이라고 할 수 있고, 여기서 설정된 값을 하위 블록들은 상속한다. http 블록은 여러개를 사용할 수 있지만 관리상의 이슈로 한번만 사용하는 것을 권장한다.&lt;/p&gt;
+
+    &lt;p&gt;http, server, location 블록은 계층구조를 가지고 있다. 많은 지시어가 각각의 블록에서 동시에 사용할 수 있는데, http의 내용은 server의 기본값이 되고, server의 지시어는 location의 기본값이 된다. 그리고 하위의 블록에서 선언된 지시어는 상위의 선언을 무시하고 적용된다.&lt;/p&gt;
+
+    &lt;h3 id=&quot;server-블록&quot;&gt;server 블록&lt;/h3&gt;
+
+    &lt;p&gt;server 블록은 하나의 웹사이트를 선언하는데 사용된다. 가상 호스팅(Virtual Host)의 개념이다. 예를들어 하나의 서버로 http://opentutorials.org 과 http://egoing.net 을 동시에 운영하고 싶은 경우 사용할 수 있는 방법이다. 가상 호스팅에 대한 자세한 내용은 &lt;a href=&quot;http://opentutorials.org/module/384/4529&quot;&gt;가상 호스팅 수업&lt;/a&gt;을 참고하자.&lt;/p&gt;
+
+    &lt;h3 id=&quot;location-블록&quot;&gt;location 블록&lt;/h3&gt;
+
+    &lt;p&gt;location 블록은 server 블록 안에 등장하면서 특정 URL을 처리하는 방법을 정의한다. 이를테면 http://opentutorials.org/course/1 과 http://opentutorials.org/module/1 로 접근하는 요청을 다르게 처리하고 싶을 때 사용한다.&lt;/p&gt;
+
+    &lt;h3 id=&quot;events-블록&quot;&gt;events 블록&lt;/h3&gt;
+
+    &lt;p&gt;이벤트 블록은 주로 네트워크의 동작방법과 관련된 설정값을 가진다. 이벤트 블록의 지시어들은 이벤트 블록에서만 사용할 수 있고, http, server, location와는 상속관계를 갖지 않는다. 이벤트 모듈 지시어에 대한 설명은 &lt;a href=&quot;http://opentutorials.org/module/384/4534&quot;&gt;이벤트 모듈 지시어 사전&lt;/a&gt;을 참고한다.&lt;/p&gt;
+
+    &lt;h3 id=&quot;설정-파일의-반영&quot;&gt;설정 파일의 반영&lt;/h3&gt;
+
+    &lt;p&gt;설정 파일의 내용을 변경한 후에는 이를 NGINX에 반영해야 하는데 아래와 같이 reload 명령을 이용한다. restart를 이용해도 되지만 권장되지 않는다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;forward-proxy와-reverse-proxy의-차이&quot;&gt;Forward proxy와 Reverse proxy의 차이&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.lesstif.com/pages/viewpage.action?pageId=21430345&quot;&gt;https://www.lesstif.com/pages/viewpage.action?pageId=21430345&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;vps란&quot;&gt;VPS란?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://library.gabia.com/contents/infrahosting/3594&quot;&gt;http://library.gabia.com/contents/infrahosting/3594&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="record" /><summary type="html">생활코딩 Nginx강의</summary></entry></feed>
