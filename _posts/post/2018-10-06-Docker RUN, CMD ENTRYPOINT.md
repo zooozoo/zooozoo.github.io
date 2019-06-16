@@ -1,5 +1,5 @@
 ---
-title: 파이썬에서 파일 다루기
+title: RUN, CMD, ENTRYPOINT 의 차이점에 대해서 알아보자.
 tag: Doker
 excerpt: >-
  Dockerfile 작성시 RUN, CMD, ENTRYPOINT를 잘 몰라 헤맸던 기억이 있어 관련 내용을 간단하게 정리해 보고자 한다.
