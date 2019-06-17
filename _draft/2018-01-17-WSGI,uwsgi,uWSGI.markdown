@@ -18,7 +18,11 @@ CGI는 환경변수나 표준입출력을 다룰 수 있는 프로그램 언어�
 
 [cgi와 wsgi의 차이에 대해서](https://brownbears.tistory.com/350)
 
-FastCGI : 웹서버 프로세스로 인터프리터를 상주시키는 방법으로 속도 개선한다. 웹 서버에서는 따로 프로세스를 fork헤서 처리한다.
+mod-perl, mod-php, mod-python : 웹서버 프로세스로 인터프리터를 상주시키는 방법으로 속도 개선한다. 웹 서버에서는 따로 프로세스를 fork헤서 처리한다.
+
+FastCGI : web server와 소켓이나 tcp연결을 통해 동적인 요청에 응답해 준다. web server와 독립적인 process로 관리된다.
+
+출처: https://show-me-the-money.tistory.com/50 [개발자, Trend를 파헤치다.]
 
 [cgi가 무엇인지에 대한 포스팅()https://show-me-the-money.tistory.com/50)
 
