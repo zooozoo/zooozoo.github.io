@@ -1,0 +1,45 @@
+---
+title: CGI, WSGI, uwsgi
+tag: [ide, atom]
+category: post
+---
+
+[wiki에서 cgi](https://ko.wikipedia.org/wiki/%EA%B3%B5%EC%9A%A9_%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4)
+
+> 공용 게이트웨이 인터페이스(영어: Common Gateway Interface; CGI)는 웹 서버 상에서 사용자 프로그램을 동작시키기 위한 조합이다. 존재하는 많은 웹 서버 프로그램은 CGI의 기능을 이용할 수 있다.
+
+웹 서버 프로그램의 기능의 주체는 미리 준비된 정보를 이용자(클라이언트)의 요구에 응답해 보내는 것이다. 그 때문에 서버 프로그램 그룹에서는 정보를 그 장소에서 동적으로 생성하고 클라이언트에 송신하려하는 조합을 작성하는 것이 불가능했다. 서버 프로그램에서 다른 프로그램을 불러내고, 그 처리 결과를 클라이언트에 송신하는 방법이 고안되었다. 이를 실현하기 위한 서버 프로그램과 외부 프로그램과의 연계법을 정한 것이 CGI이다.
+
+CGI는 환경변수나 표준입출력을 다룰 수 있는 프로그램 언어에서라면 언어의 구별을 묻지 않고 확장하여 이용하는 것이 가능하나, 실행속도나 텍스트 처리의 용이함 등의 균형에 의해 펄이 사용되는 경우가 많았다. 최근[언제?]에는 펄뿐 아니라 파이썬, 루비 등도 널리 쓰이고 있다.
+
+대표적인 애플리케이션에는 전자게시판, 접속 카운터, 위키나 블로그 시스템 등이 있다.
+
+근래[언제?]에는 웹 서버의 프로세스로서 인터프리터를 상주시킴으로써, CGI로부터 프로그램을 호출해 부하를 줄임으로써 성능을 개선한 자바 서블릿이나 mod perl, mod php, FastCGI 등도 공개되었다.
+
+[cgi와 wsgi의 차이에 대해서](https://brownbears.tistory.com/350)
+
+FastCGI : 웹서버 프로세스로 인터프리터를 상주시키는 방법으로 속도 개선한다. 웹 서버에서는 따로 프로세스를 fork헤서 처리한다.
+
+[cgi가 무엇인지에 대한 포스팅()https://show-me-the-money.tistory.com/50)
+
+**차이점**
+* cgi
+    * 호출(여러번의 요청)이 있을 때 마다 process를 생성하여 처리
+* FastCGI
+    * 하나의 프로세스로 여러 요청을 처리
+
+웹서버가 프로그램과 상호작용 하는 여러가지 방식이 있고 다음과 같다. CGI, Fast CGI, mod_python
+하지만 이들의 통신 방식은 python의 여러 프레임워크마다 그리고 흔히 Proxy로 사용하는 웹서버마다 다르게 정의되어 있음
+
+이러한 웹서버와 python application간의 통신 방식에 존재하는 종속성을 없애기 위해 표준을 정의한 것이 바로 WSGI.
+
+그리고 표준대로 웹서버와 python application간의 다리 역할을 해줄 수 있는 구현체가 WSGI 서버
+
+Python은 테스팅용으로 내부적으로 wsgiref라는 WSGI 서버를 가지고 있음.
+
+대표적인 WSGI 서버는 flup, gunicorn, uwsgi등이 존재합니다.
+
+
+[wsgi, uwsgi uWSGI에 대한 용어 구분 stackoverflow 답변](https://stackoverflow.com/a/8691337/8319977)
+
+WSGI, uwsgi : 둘다 ARE protocol이다
