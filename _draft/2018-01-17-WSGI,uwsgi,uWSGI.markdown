@@ -46,7 +46,7 @@ Python은 테스팅용으로 내부적으로 wsgiref라는 WSGI 서버를 가지
 
 [wsgi, uwsgi uWSGI에 대한 용어 구분 stackoverflow 답변](https://stackoverflow.com/a/8691337/8319977)
 
-WSGI, uwsgi : 둘다 ARE protocol이다
+WSGI, uwsgi : 둘다 protocol이다
 
 
 WSGI는 파이썬에 종속된 개념이고, FCGI는 언어와 상관없는 socket wire 프로토콜이다.
@@ -106,3 +106,19 @@ Note that uWSGI is a full fledged http server that can and does work well on its
 [WSGI로 만들어진 미들웨어가 mod_wsgi, uWSGI, gunicorn, twisted.web, tornado](https://khanrc.tistory.com/entry/WSGI%EB%A1%9C-%EB%B3%B4%EB%8A%94-%EC%9B%B9-%EC%84%9C%EB%B2%84%EC%9D%98-%EA%B0%9C%EB%85%90)
 [WSGI는 파이썬에 종속된 개념이고, FCGI는 언어와 상관없는 socket wire 프로토콜이다. WSGI가 더 높은 레이어에서 동작하며, 따라서 WSGI-FCGI를 동시에 사용할 수 도 있다.](https://khanrc.tistory.com/entry/WSGI%EC%99%80-CGI%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 [결국 WSGI는 서버,게이트웨이 와 애플리케이션,프레임워크의 주고 받는 protocol 방식](https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%84%9C%EB%B2%84_%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4)
+
+
+# 정리하자면
+
+**CGI**
+웹 서버 프로그램의 기능의 주체는 미리 준비된 정보를 이용자(클라이언트)의 요구에 응답해 보내는 것이다. 그 때문에 서버 프로그램 그룹에서는 정보를 그 장소에서 동적으로 생성하고 클라이언트에 송신하려하는 조합을 작성하는 것이 불가능했다. 서버 프로그램에서 다른 프로그램을 불러내고, 그 처리 결과를 클라이언트에 송신하는 방법이 고안되었다. 이를 실현하기 위한 서버 프로그램과 외부 프로그램과의 연계법을 정한 것이 CGI이다.
+
+**WSGI**
+웹서버와 python appication 간의 인터페이스 규격이다. WSGI는 CGI/FastCGI/mod_python 과 비교 할 수 있는 개념이 아니다. 이러한 것들은 모두 protocol의 개념이며 WSGI middleware는 이런 protocol을 통해서 webserver와 통신한다. WSGI는 CGI 디자인 패턴을 기반으로 하였으나 꼭 CGI처럼 서브 프로세스를 띄워서 request를 처리할 필요는 없다. CGI가 될 수도 있지만, 안될 수도 있다.(사용하는 방식 나름이라는 이야기) CGI방식이 아니라면 mod_python처럼 webserver에 인터프리터를 내장하거나 FastCGI처럼 daemon process를 띄우는 방식으로 동적인 요청을 처리 할 수 있다. 참고로 이렇게 될 경우 파이썬 애플리케이션은 WSGI middleware위에 얹혀서 돌아가게 된다. WSGI프로토콜 서버의 종류로는 uWSGI, mod_wsgi, gunicorn, twisted.web, tornado 등이 있다. 
+
+**uWSGI**
+WSGI표준으로 만들어진 웹서버. WSGI middleware라고 할 수 있으며, 같은 역할을 하는 다른 웹서버로는 mod_wsgi, gunicorn, twisted.web, tornado 등이 있다. 다시 말하면 WSGI는 일종의 규격이고 그 규적을 충족시키며 만든 웹서버들이 위와 같은 것들이다.
+
+**uwsgi**
+웹서버와 WSGI middleware 간에 통신하는 protocol(규격) 
+예를 들면 nginx <-> uwsgi <-> uWSGI(python application이 여기서 동작) 이런식의 관계
