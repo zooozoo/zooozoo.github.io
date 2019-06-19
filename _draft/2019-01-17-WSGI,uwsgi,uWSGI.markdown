@@ -1,6 +1,6 @@
 ---
 title: CGI, WSGI, uwsgi
-tag: [ide, atom]
+tag: [python, webserver, CGI, WSGI]
 category: post
 ---
 

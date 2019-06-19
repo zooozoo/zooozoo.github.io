@@ -1,0 +1,5 @@
+---
+title: SQL 첫걸음을 읽고 기록에 남기고 싶은 것들
+tag: [ide, atom]
+category: record
+---
