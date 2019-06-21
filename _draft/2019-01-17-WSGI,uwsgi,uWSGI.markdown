@@ -61,15 +61,12 @@ https://brownbears.tistory.com/350
 
 [cgi 동작에 관한 설명](https://docs.python.org/2/howto/webservers.html#common-gateway-interface)
 Programs using CGI to communicate with their web server need to be started by the server for every request. So, every request starts a new Python interpreter – which takes some time to start up – thus making the whole interface only usable for low load situations.
-
 cgi는 request가 올 때 마다 새로운 python interpreter를 실행시킨다. (시작하는데 시간이 걸림)
-
 
 [Common problems with CGI scripts](https://docs.python.org/2/howto/webservers.html#common-problems-with-cgi-scripts)
 * python cgi script를 실행시킬 수 있도록 권한지정을 해줘야 한다.
 * 시스템에 맞게 script 파일의 시작과 끝 지점을 수정해 줘야 한다. 
 * web server가 CGI 스크립트를 접근 할 수 있도록 따로 설정해줘야 한다.
-
 
 [mod_python](https://docs.python.org/2/howto/webservers.html#mod-python)
 * mod_python은 주로 php에서 넘어온 개발자들이 python을 웹에서 사용하기 위해 만들게 되었다. (mod_php는게 있음)
@@ -81,7 +78,6 @@ cgi는 request가 올 때 마다 새로운 python interpreter를 실행시킨다
     * 특정 버전의 libpython 의존성이 있다.
     * 아파치 웹서버와 엮여 있었기 때문에 다른 웹 서버와 쉽사리 연됭되지 않았다.
 * 위의 문재점들로 인해 새로운 프로그램을 만 들 때 mod_python을 사용하지 말아야 겠지만 특정 상황에서는 아직도 mod_python을 사용하는 것이 좋을 수도 있다. 하지만 WSGI가 생겨남으로써 WSGI 프로그램을 mod_python 환경에서 구동될 수 있게 되었다.
-
 
 [FastCGI and SCGI](https://docs.python.org/2/howto/webservers.html#fastcgi-and-scgi)
 * FastCGI와 SCGI는 다른 방식으로 CGI의 성능 문제를 해결하려고 시도했다. 인터프리터를 웹서버에 내장하는 방식 대신에 오랬동안 동작하는 백그라운드 프로세스를 만들어서 사용했다.
@@ -111,7 +107,31 @@ Note that uWSGI is a full fledged http server that can and does work well on its
 # 정리하자면
 
 **CGI**
-웹 서버 프로그램의 기능의 주체는 미리 준비된 정보를 이용자(클라이언트)의 요구에 응답해 보내는 것이다. 그 때문에 서버 프로그램 그룹에서는 정보를 그 장소에서 동적으로 생성하고 클라이언트에 송신하려하는 조합을 작성하는 것이 불가능했다. 서버 프로그램에서 다른 프로그램을 불러내고, 그 처리 결과를 클라이언트에 송신하는 방법이 고안되었다. 이를 실현하기 위한 서버 프로그램과 외부 프로그램과의 연계법을 정한 것이 CGI이다.
+유저가 웹사이트를 들어올 때 브라우저는 해당 사이트를 제공하는 웹서버와 연결된다. 서버는 요청된 파일을 파일 시스템 안에서 찾고 찾은 내용을 유저에게 보내준다. 이러한 방식은 HTTP protocol의 대략적인 모습이다.
+하지만 동적인 웹사이트들은 파일시스템 안의 파일을 기봔으로 만들어져 있기 보단, 요청이 들어왔을 때 웹서버에 의해서 가동되어 유저에게 제공될 콘텐츠를 만들어 내는 프로그램에 기반한다. 이러한 프로그램은 웹서버가 지원 할 수 있는 어떠한 프로그래밍 언어로 만들어 질 수 있다.
+대부분의 HTTP서버는 C 혹은 C++로 만들어져 있기 때문에 바로 파이썬 코드를 호출 할 수 없었고 그 사이에는 연결 해줄 다리가 필요해따. 이러한 다리를 interface라고 부르며, 파이썬과 같은 언어로 만들어진 프로그램이 어떻게 server와 상호작용 할 지를 결정했다. 
+일반적으로 CGI라고 하는 이 interface는 가장 오래된 것으로 거의 모든 웹 서버에서 지원된다.
+웹서버와 상호작용 하기 위해 CGI를 사용하는 프로그램은 모든 요청마다 서버에 의해 새롭게 가동 될 필요가 있다. 즉, 모든 request는 새로운 python interpreter를 가동시킴으로써 부하량이 적은 상황에서만 사용 할 수 있다.
+
+**mod_python**
+mod_python은 Apache process에 인터프리터를 내장시키는 방식으로서, 주로 php에서 넘어온 개발자들이 python을 웹에서 사용하기 위해 만들게 되었다(mod_php는게 있음). 기존의 CGI가 각각의 request마다 process를 만들고 process가 생길 때 마다 interpreter를 가동시키는 방법이라면 mod_python은 python interpreter를 아파치 서버의 process에 내장 시키켜서 각각의 request별로 python interpreter를 가동시키지 않아도 되게끔 만들어서 성능 향상을 이뤄냈다. 하지만 문제점도 있었는데 다음과 같다.
+    * PHP interpreter와는 다르게 python interpreter는 캐시를 사용하는데 파일이 변경 될 경우 웹서버가 재가동 되어야만 변경사항이 적용된다.
+    * 아파치 서버는 request를 처리하기 위해 자식 프로세스를 사용하는데 모든 자식 프로세스들은 사용되지 않더라도 python interpreter를 가동되는 상태에서 동작해야만 했다.
+    * 특정 버전의 libpython 의존성이 있다.
+    * 아파치 웹서버와 엮여 있었기 때문에 다른 웹 서버와 쉽사리 연결되지 않았다.
+위와 같은 문재점들로 인해 새로운 프로그램을 만 들 때 mod_python을 사용하지 말아야 겠지만 특정 상황에서는 아직도 mod_python을 사용하는 것이 좋을 수도 있다. 하지만 WSGI가 생겨남으로써 WSGI 프로그램을 mod_python 환경에서 구동될 수 있게 되었다.
+
+**FastCGI**
+FastCGI와 SCGI는 다른 방식으로 CGI의 성능 문제를 해결하려고 시도했다. mod_python과 같이 인터프리터를 웹서버에 내장하는 방식 대신에 오랬동안 동작하는 백그라운드 프로세스를 만들어서 사용했다. 웹서버세에서 백그라운드 프로세스로 내용전달을 가능하게끔 하는 모듈은 여전히 웹서버 안에 있다. 
+
+
+FastCGI 방식의 단점은 다음과 같다. 
+
+[FastCGI and SCGI](https://docs.python.org/2/howto/webservers.html#fastcgi-and-scgi)
+* FastCGI와 SCGI는 다른 방식으로 CGI의 성능 문제를 해결하려고 시도했다. 인터프리터를 웹서버에 내장하는 방식 대신에 오랬동안 동작하는 백그라운드 프로세스를 만들어서 사용했다.
+* 하지만 백그라운드 프로세스로 내용전달을 위한 모듈은 여전히 웹서버안에 있다.
+* 백그라운드 프로세스는 서버와는 독립적으로 동작했기 때문에 파이썬을 포함해 어떤 언어로든지 만들어 질 수 있었다. 다만 사용 되는 언어에서 웹서버와 커뮤니케이션 하기 위한 라이브러리를 가지고 있어야만 했다.
+* 오늘날에는 FastCGI 단독으로 사용되는 경우는 없다. mod_python 처럼 WSGI 어플리케이션을 배포해서 사용하는 용도로 사용 될 뿐이다.
 
 **WSGI**
 웹서버와 python appication 간의 인터페이스 규격이다. WSGI는 CGI/FastCGI/mod_python 과 비교 할 수 있는 개념이 아니다. 이러한 것들은 모두 protocol의 개념이며 WSGI middleware는 이런 protocol을 통해서 webserver와 통신한다. WSGI는 CGI 디자인 패턴을 기반으로 하였으나 꼭 CGI처럼 서브 프로세스를 띄워서 request를 처리할 필요는 없다. CGI가 될 수도 있지만, 안될 수도 있다.(사용하는 방식 나름이라는 이야기) CGI방식이 아니라면 mod_python처럼 webserver에 인터프리터를 내장하거나 FastCGI처럼 daemon process를 띄우는 방식으로 동적인 요청을 처리 할 수 있다. 참고로 이렇게 될 경우 파이썬 애플리케이션은 WSGI middleware위에 얹혀서 돌아가게 된다. WSGI프로토콜 서버의 종류로는 uWSGI, mod_wsgi, gunicorn, twisted.web, tornado 등이 있다. 
