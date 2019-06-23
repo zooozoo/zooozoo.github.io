@@ -20,20 +20,13 @@ mod_python은 Apache process에 인터프리터를 내장시키는 방식으로�
 위와 같은 문제들 때문에 새로운 프로그램을 만 들 때 mod_python을 사용하지 말아야 겠지만 특정 상황에서는 아직도 mod_python을 사용하는 것이 좋을 수도 있다. 하지만 WSGI가 생겨남으로써 WSGI를 통해 mod_python 환경에서 python application을 구동 할 수도 있게 되었다.
 
 **FastCGI**
-FastCGI와 SCGI는 mod_python과는 방식으로 CGI의 성능 문제를 해결하려고 시도했다. mod_python과 같이 인터프리터를 웹서버에 내장하는 방식 대신에 오랬동안 동작하는 백그라운드 프로세스를 만들어서 사용하는 방식으로 성능 향상을 이뤄냈다. 웹서버에서 백그라운드 프로세스로 내용전달을 가능하게끔 하는 모듈은 여전히 웹서버 안에 있다. 백그라운드 프로세스는 서버와는 독립적으로 동작했기 때문에 파이썬을 포함해 어떤 언어로든지 만들어 질 수 있었다. 다만 사용 되는 언어에서 웹서버와 커뮤니케이션을 조작하기 위한 라이브러리를 가지고 있어야만 했다. SCGI는 단지 "simpler FastCGI" 이기 때문에 FastCGI와 SCGI의 차이점은 거의 없다. 다만 웹서버가 SCGI를 지원하는 것에는 제한이 있기 때문에 대부분의 사람들은 똑같은 방식으로 동작하는 FastCGI를 사용한다.
-오늘 날에는 FastCGI를 직접적으로 사용하는 일은 없다. mod_python처럼 단지 WSGI application 배포에 사용된다.
-
-
-FastCGI 방식의 단점은 다음과 같다. 
-
-[FastCGI and SCGI](https://docs.python.org/2/howto/webservers.html#fastcgi-and-scgi)
-* FastCGI와 SCGI는 다른 방식으로 CGI의 성능 문제를 해결하려고 시도했다. 인터프리터를 웹서버에 내장하는 방식 대신에 오랬동안 동작하는 백그라운드 프로세스를 만들어서 사용했다.
-* 하지만 백그라운드 프로세스로 내용전달을 위한 모듈은 여전히 웹서버안에 있다.
-* 백그라운드 프로세스는 서버와는 독립적으로 동작했기 때문에 파이썬을 포함해 어떤 언어로든지 만들어 질 수 있었다. 다만 사용 되는 언어에서 웹서버와 커뮤니케이션 하기 위한 라이브러리를 가지고 있어야만 했다.
-* 오늘날에는 FastCGI 단독으로 사용되는 경우는 없다. mod_python 처럼 WSGI 어플리케이션을 배포해서 사용하는 용도로 사용 될 뿐이다.
+FastCGI와 SCGI는 mod_python과는 방식으로 CGI의 성능 문제를 해결하려고 시도했다. mod_python과 같이 인터프리터를 웹서버에 내장하는 방식 대신에 오랬동안 동작하는 백그라운드 프로세스를 만들어서 사용하는 방식으로 성능 향상을 이뤄냈다. 웹서버에서 백그라운드 프로세스로 내용전달을 가능하게끔 하는 모듈은 여전히 웹서버 안에 있다. 백그라운드 프로세스는 서버와는 독립적으로 동작했기 때문에 파이썬을 포함해 어떤 언어로든지 만들어 질 수 있었다. 다만 사용 되는 언어에서 웹서버와 커뮤니케이션을 조작하기 위한 라이브러리를 가지고 있어야 한다. SCGI는 단지 "simpler FastCGI" 이기 때문에 FastCGI와 SCGI의 차이점은 거의 없다. 다만 웹서버가 SCGI를 지원하는 것에는 제한이 있기 때문에 대부분의 사람들은 똑같은 방식으로 동작하는 FastCGI를 사용한다.
+오늘 날에는 FastCGI를 직접적으로 사용하는 일은 없다. mod_python처럼 단지 WSGI application을 배포하는 용도로 사용된다.
 
 **WSGI**
-웹서버와 python appication 간의 인터페이스 규격이다. WSGI는 CGI/FastCGI/mod_python 과 비교 할 수 있는 개념이 아니다. 이러한 것들은 모두 protocol의 개념이며 WSGI middleware는 이런 protocol을 통해서 webserver와 통신한다. WSGI는 CGI 디자인 패턴을 기반으로 하였으나 꼭 CGI처럼 서브 프로세스를 띄워서 request를 처리할 필요는 없다. CGI가 될 수도 있지만, 안될 수도 있다.(사용하는 방식 나름이라는 이야기) CGI방식이 아니라면 mod_python처럼 webserver에 인터프리터를 내장하거나 FastCGI처럼 daemon process를 띄우는 방식으로 동적인 요청을 처리 할 수 있다. 참고로 이렇게 될 경우 파이썬 애플리케이션은 WSGI middleware위에 얹혀서 돌아가게 된다. WSGI프로토콜 서버의 종류로는 uWSGI, mod_wsgi, gunicorn, twisted.web, tornado 등이 있다. 
+웹서버와 python appication 간의 인터페이스 규격이다. WSGI는 CGI/FastCGI/mod_python 과 비교 할 수 있는 개념이 아니다. 이러한 것들은 모두 protocol의 개념이며, WSGI는 이러한 프로토콜 보다 더 상위레벨(high level)의 개념으로 CGI든 FastCGI방식이든 간에 python application이 웹서버와 통신하는 방법을 규격화 시켜 놓은 것 이다.
+좀 더 상세하게 말하자면, WSGI는 CGI 디자인 패턴을 기반으로 하였으나 파이썬 인터프리터를 어떤 방식으로 동작시켜야 하는지 명시하지 않았고, 앱 객체가 로드되거나 구성되는 방식 또한 마찬가지로 따로 명시하지 않았다. 그렇기 때문에 WSGI를 지원하는 framework 이나 webserver들은 각자 다른 방식으로(CGI/FastCGI/mod_python) webserver와 통신한다. 
+그렇기 때문에 WSGI는 프로그래머가 어떤 게이트웨이 인터페이스던지 상관없이 WSGI 규격에만 맞게 프로그램을 만들면 되게끔 해 주었다.
 
 **uWSGI**
 WSGI표준으로 만들어진 웹서버. WSGI middleware라고 할 수 있으며, 같은 역할을 하는 다른 웹서버로는 mod_wsgi, gunicorn, twisted.web, tornado 등이 있다. 다시 말하면 WSGI는 일종의 규격이고 그 규적을 충족시키며 만든 웹서버들이 위와 같은 것들이다.
@@ -151,6 +144,18 @@ XSLT 스타일시트를 적용하는 것과 같이 전처리를 한다.
 
 어플리케이션의 관점에서는 이 미들웨어를 통해 앱이 실행되므로 앱을 실행시켜주는 어플리케이션 컨테이너(Application Container)라고도 할 수 있다.
 
+[미들웨어에 대한 설명은 오히려 wiki쪽이 더 정확하게 설명해 놓은 것 같다](https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%84%9C%EB%B2%84_%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4)
+
 [WSGI는 파이썬에 종속된 개념이고, FCGI는 언어와 상관없는 socket wire 프로토콜이다. WSGI가 더 높은 레이어에서 동작하며, 따라서 WSGI-FCGI를 동시에 사용할 수 도 있다.](https://khanrc.tistory.com/entry/WSGI%EC%99%80-CGI%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 [결국 WSGI는 서버,게이트웨이 와 애플리케이션,프레임워크의 주고 받는 protocol 방식](https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%84%9C%EB%B2%84_%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4)
 
+
+[WSGI does not specify how the Python interpreter should be started, nor how the application object should be loaded or configured, and different frameworks and webservers achieve this in different ways.](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)
+WSGI는 파이썬 인터프리터를 어떤 방식으로 동작시켜야 하는지 명시하지 않았고, 앱 객체가 로드되거나 구성되는 방식 또한 마찬가지 이다. 그렇기 때문에 서로 다른 framework 이나 webserver들은 각자 다른 방식으로 동작한다.
+
+
+[WSGI를 지원하는 프레임웍, 서버, 어플리케이션, WSGI middleware와 라이브러리를 나열해 놓음](https://wsgi.readthedocs.io/en/latest/)
+
+[WSIG middleware에 대한 간단한 설명과 예시](https://rufuspollock.com/2006/09/28/wsgi-middleware/)
+
+[Werkzeug 문서에서 설명하는 WSGI middleware](https://werkzeug.palletsprojects.com/en/0.15.x/middleware/)
