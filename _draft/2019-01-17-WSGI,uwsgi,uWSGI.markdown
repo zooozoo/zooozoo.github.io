@@ -28,8 +28,8 @@ FastCGI와 SCGI는 mod_python과는 방식으로 CGI의 성능 문제를 해결�
 좀 더 상세하게 말하자면, WSGI는 CGI 디자인 패턴을 기반으로 하였으나 파이썬 인터프리터를 어떤 방식으로 동작시켜야 하는지 명시하지 않았고, 앱 객체가 로드되거나 구성되는 방식 또한 마찬가지로 따로 명시하지 않았다. 그렇기 때문에 WSGI를 지원하는 framework 이나 webserver들은 각자 다른 방식으로(CGI/FastCGI/mod_python) webserver와 통신한다. 
 그렇기 때문에 WSGI는 프로그래머가 어떤 게이트웨이 인터페이스던지 상관없이 WSGI 규격에만 맞게 프로그램을 만들면 되게끔 해 주었다.
 
-**uWSGI**
-WSGI표준으로 만들어진 웹서버. WSGI middleware라고 할 수 있으며, 같은 역할을 하는 다른 웹서버로는 mod_wsgi, gunicorn, twisted.web, tornado 등이 있다. 다시 말하면 WSGI는 일종의 규격이고 그 규적을 충족시키며 만든 웹서버들이 위와 같은 것들이다.
+**uWSGI** 웹서버 종류 확인 할 필요 [여기서 확인](https://wsgi.readthedocs.io/en/latest/index.html)
+WSGI표준으로 만들어진 웹서버. mod_wsgi, gunicorn, twisted.web, tornado 등이 있다. 다시 말하면 WSGI는 일종의 규격이고 그 규적을 충족시키며 만든 웹서버들이 위와 같은 것들이다.
 
 **uwsgi**
 웹서버와 WSGI middleware 간에 통신하는 protocol(규격) 
@@ -159,3 +159,7 @@ WSGI는 파이썬 인터프리터를 어떤 방식으로 동작시켜야 하는�
 [WSIG middleware에 대한 간단한 설명과 예시](https://rufuspollock.com/2006/09/28/wsgi-middleware/)
 
 [Werkzeug 문서에서 설명하는 WSGI middleware](https://werkzeug.palletsprojects.com/en/0.15.x/middleware/)
+
+[WSGI가 생겨난 배경에 대해서 알 수 있음](https://www.fullstackpython.com/wsgi-servers.html)
+
+[WSGI와 WSGI middleware에 대한 간단하지만 정확하고 쉬운 설명](https://be.groovie.org/2005/10/07/wsgi_and_wsgi_middleware_is_easy.html)
