@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>독하게시작하는c프로그래밍 | HOME</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="독하게시작하는c프로그래밍" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="제1장 c프로그래밍 입문" />
+<meta property="og:description" content="제1장 c프로그래밍 입문" />
+<link rel="canonical" href="/2018-03-24/%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" />
+<meta property="og:url" content="/2018-03-24/%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" />
+<meta property="og:site_name" content="HOME" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-24T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"제1장 c프로그래밍 입문","@type":"BlogPosting","url":"/2018-03-24/%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D","headline":"독하게시작하는c프로그래밍","dateModified":"2018-03-24T00:00:00+00:00","datePublished":"2018-03-24T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2018-03-24/%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="HOME" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">HOME</h2>
+    </a>
+    <ul>
+      <li><a href="/post/">POSTS</a></li>
+      <li><a href="/record/">RECORDS</a></li>
+      <li><a href="/tis/">TIS</a></li>
+      <li><a href="/about">ABOUT</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2018-03-24 00:00:00 +0000">March 24, 2018</time>
+    
+  </div>
+
+  <h1 class="post-title">독하게시작하는c프로그래밍</h1>
+  <div class="post-line"></div>
+
+  <h1 id="제1장-c프로그래밍-입문">제1장 c프로그래밍 입문</h1>
+
+<h3 id="오류해결-사례">오류해결 사례</h3>
+
+<p><code class="highlighter-rouge">f7</code>키를 통해서 빌드할 때 아래와 같은 에러 발생</p>
+
+<blockquote>
+  <p>c:\apiexam\firsts\firsts\firsts.cpp(46): fatal error C1010: 미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. ‘#include “StdAfx.h”‘을(를) 소스에 추가하시겠습니까?</p>
+</blockquote>
+
+<ul>
+  <li>검색을 통해 문제 해결
+    <ul>
+      <li><a href="https://social.msdn.microsoft.com/Forums/ko-KR/cc067d9f-3c6e-4ca6-a5ce-68114a428da3/visual-c-487164630044032-50504461214576845796?forum=visualcplusko">링크</a></li>
+      <li>해결방법
+        <ol>
+          <li>프로젝트의 솔루션 탐색기 창에서 마우스 오른쪽 단추로 프로젝트 이름을 클릭한 다음 속성을 클릭합니다.</li>
+          <li>왼쪽 창에서 C/C++ 폴더를 클릭합니다.</li>
+          <li>미리 컴파일된 헤더 노드를 클릭합니다.</li>
+          <li>오른쪽 창에서 미리 컴파일된 헤더 만들기/사용을 클릭한 다음 미리 컴파일된 헤더 사용 안 함을 클릭합니다.</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="강의-중-기록사항">강의 중 기록사항</h3>
+
+<p>강의중 나온 단축키 설명</p>
+
+<ul>
+  <li><code class="highlighter-rouge">f7</code>  : 빌드</li>
+  <li><code class="highlighter-rouge">ctrl</code> + <code class="highlighter-rouge">f5</code> : 디버깅 하지 않고 실행 (내용을 확이할 수 있도록 실행 결과가 창에 떠있음)</li>
+</ul>
+
+<h1 id="제3장-표준-입출력-도구-첫-번째">제3장 표준 입/출력 도구 첫 번째</h1>
+
+<ul>
+  <li>ux의 시대에도 cli와 같은 근본적인 입출력은 잘 알아야 한다. 결국 정보란 문자열이기 때문에</li>
+  <li>getchar()
+    <ul>
+      <li>어디서 어떻게 가져오는지 알아보자</li>
+    </ul>
+  </li>
+  <li>컴퓨터의 구조에 대해서 생각해 보자
+    <ul>
+      <li>컴퓨터
+        <ul>
+          <li>하드웨어</li>
+          <li>소프트 웨어
+            <ul>
+              <li>시스템 소프트웨어 (ex: os)</li>
+              <li>응용 소프트웨어</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>컴퓨터의 계층(국가를 예시로 영토, 정부, 가구로 설명함)
+        <ol>
+          <li>하드웨어</li>
+          <li>커널 os
+            <ul>
+              <li>디바이스를 제어하는 <code class="highlighter-rouge">디바이스 드라이버</code> 커널 소프트웨어</li>
+            </ul>
+          </li>
+          <li>유저 user/ 프로세스
+            <ul>
+              <li>프로세스는 각각의 영역을 보장 받는다.</li>
+              <li>그러나 프로세스가 할당받은 영역을 제어할 수 있는 소프트웨어가 있는데 <code class="highlighter-rouge">디버거</code>라고 한다.</li>
+              <li>다른프로세스의 메모리를 변조하는 공격을 메모리 해킹이라고 하는데 이것을 <code class="highlighter-rouge">디버거</code>로 한다. 또한 소프트웨어의 문제를 해결하는 것 또한 <code class="highlighter-rouge">디버거</code></li>
+              <li>유저모드에서 커널모드로의 진입은 불가</li>
+              <li>커널과 연결할 수 있는 추상화된 인터페이스 -&gt; 파일(File)</li>
+              <li>파일은 파일마다 고유한 입출력 버퍼를 가지고 있다. (즉 메모리를 가지고 있다.)
+                <ol>
+                  <li>write
+                    <ul>
+                      <li>ex) putchar(‘A’)를 할 경우 ‘A’라는 버퍼를 체우게 되는데 이것을 버퍼링이라고 한다.</li>
+                    </ul>
+                  </li>
+                  <li>read
+                    <ul>
+                      <li>ex) getchar()함수는 버퍼로 부터 한 글자를 퍼올리는역할을 한다.</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>파일을 알맞은 규칙에 맞게 작성해서 커널로 전달하면 커널이 다시 하드웨어를 작동시킨다. 이때에 규칙이 <code class="highlighter-rouge">Protocol</code>(protocol은 정보전달 규약)</li>
+              <li>파일 입출력의 다양한 규칙을 맞추기 어려우니 하나의 함수 형태로 만들어 놓은게 getchar(), putchar() 함수다.</li>
+              <li>만약 프로토콜이 TCP일 경우, 프로토콜 서비스를 추상화한 파일의 경우 특별하게 <code class="highlighter-rouge">socket</code>이라고 한다.</li>
+              <li>소켓은 정보를 수신할 때 언제 수신할지 모르기 때문에 비동기 방식을 체택한다.</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li>c언어는 컴퓨터의 모든부분을 커버할 수 있다.</li>
+    </ul>
+  </li>
+  <li>입출력 (I/O)을 수행하는 주체 -&gt; 커널</li>
+  <li>putchar() - 입출력을 요구하는 함수</li>
+  <li>입출력은 user모드 어플리케이션에서 요구하고 -&gt; 커널이 입출력을 담당한다.</li>
+  <li>소캣프로그래밍을 잘하고 싶다면 시스템 프로그래밍 + file I/O + Protocol  이렇게 하면 된다.</li>
+  <li>putchar, getchar는 버퍼드I/O를 한다.</li>
+  <li>getchar()함수의 작동 과정
+    <ul>
+      <li>하드웨어에서(ex, 키보드) ‘hello’를 입력받으면 장치드라이버와 인터페이스를 통해 파일을 추상화 한 후 해당 파일로 부터 꺼내서 read를 하게 된다. 파일마다 I/O 버퍼가 존재한다. 버퍼에 ‘hello가 쌓이게 됨’ -&gt; 이런 상황에서 getchar함수를 실행하면 ‘h’를 끄집어 내서 ‘char’형식으로 반환한다.  그런데 getchar함수의 원형은 int를 반환하게 되어있음 (char + int는 int가 된다.)</li>
+    </ul>
+  </li>
+  <li>버퍼와, 버퍼링
+    <ul>
+      <li>버퍼
+        <ul>
+          <li>메모리</li>
+          <li>데이터를 한 곳에서 다른 곳으로 전송하는 동안 일시적으로 그 데이터를 보관하는 메모리 영역</li>
+          <li>사전적 정의는 ‘완충기’</li>
+        </ul>
+      </li>
+      <li>버퍼링
+        <ul>
+          <li>정보 전달 과정에서 정보를 소비하는 쪽에서 정보 전달에 문제가 생긴 상황을 모르게 하는 것</li>
+          <li>버퍼를 활용하는 방식 또는 버퍼를 채우는 동작을 말한다. 다른 말로는 ‘큐’라고도 표현한다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>논버퍼드 I/O
+    <ul>
+      <li>정보가 전달 될 때 복사되서 전달하는게 아니라 한번에 어떤 장치와 cpu가 직접 정보를 전달하게 되면 더 빠른 정보 전달이 가능하다.</li>
+      <li>DMA - Direct Memory Access</li>
+    </ul>
+  </li>
+  <li>버퍼드 I/O를 하는 함수
+    <ul>
+      <li>하드웨어 -&gt; 콘솔 -&gt; 파일을 통해 버퍼에 정보가 쌓인다.</li>
+      <li>getchar() - 버퍼에서 한글자씩 빼오는거</li>
+      <li>scanf() - 형식문자 규칙에 맞게 빼오는거 / 보안결함이 있기 때문에 scanf_s()를 사용하세요, 단 리눅스에는 없습니다. 윈도우에만 있습니다.</li>
+      <li>gets() - 버퍼에서 한줄씩 빼오는거 / 보안결함이 있기 때문에 gets_s()를 사용하세요</li>
+    </ul>
+  </li>
+  <li>논버퍼드 I/O
+    <ul>
+      <li>-getch()</li>
+      <li>버퍼에서 정보를 읽어오는 것이 아니라, 하드웨어 에서의 인터럽트를 즉시wait하고 있음</li>
+    </ul>
+  </li>
+  <li>fflush()
+    <ul>
+      <li>버퍼를 비우는 함수</li>
+      <li>원래는 output만 되는데 윈도우는 input도 됨</li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2-javascript" class="left arrow">&#8592;</a>
+  
+  
+    <a href="/2018-03-23/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+  <span>
+    &copy; <time datetime="2020-02-25 22:41:48 +0000">2020</time> . Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+  </span>
+</footer>
+
+  </body>
+</html>

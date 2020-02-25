@@ -1,32 +1,156 @@
----
-title: records
-layout: default
-pagination:
-    enabled: true
-    category: record
----
-<div class="catalogue">
-    {% for post in paginator.posts %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>records | HOME</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="records" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="/record/" />
+<meta property="og:url" content="/record/" />
+<meta property="og:site_name" content="HOME" />
+<link rel="next" href="/record/page2/" />
+<script type="application/ld+json">
+{"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebPage","url":"/record/","headline":"records","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="HOME" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">HOME</h2>
+    </a>
+    <ul>
+      <li><a href="/post/">POSTS</a></li>
+      <li><a href="/record/">RECORDS</a></li>
+      <li><a href="/tis/">TIS</a></li>
+      <li><a href="/about">ABOUT</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <div class="catalogue">
+    
+    <a href="/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3-Ajax" class="catalogue-item">
         <div>
-            <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-            <h1 class="catalogue-title">{{ post.title }}</h1>
+            <time datetime="2018-03-24 00:00:00 +0000" class="catalogue-time">March 24, 2018</time>
+            <h1 class="catalogue-title">생활코딩web3 ajax</h1>
             <div class="catalogue-line"></div>
             <p>
-                {{ post.content | strip_html | truncatewords: 30 }}
+                수업을 시작하며 ajax를 빠르게 알아보고 진행하는 프로젝트에 적용해보고자 해서 w3s 튜토리얼을 훑어본 후 생활코딩 강의도 빠르게 보면서 기본 개념들을 익혀 나가는 것이 목적 1. 수업소개 페이지 전체를 리로딩하지 않고 부분적으로...
             </p>
         </div>
     </a>
-    {% endfor %}
+    
+    <a href="/2018-03-24/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2-javascript" class="catalogue-item">
+        <div>
+            <time datetime="2018-03-24 00:00:00 +0000" class="catalogue-time">March 24, 2018</time>
+            <h1 class="catalogue-title">생활코딩web2 javascript</h1>
+            <div class="catalogue-line"></div>
+            <p>
+                수업을 시작하며 w3s의 자바스크립트를 한번 훑어 본 후 1.5배속으로 강의를 빠르게 들었다. 이미 조금씩 맛을 본 상황이어서 빠르게 볼 수 있었던 것 같다. 수업 중 기억하고 싶은 것들을 적어 놓았다....
+            </p>
+        </div>
+    </a>
+    
+    <a href="/2018-03-24/%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" class="catalogue-item">
+        <div>
+            <time datetime="2018-03-24 00:00:00 +0000" class="catalogue-time">March 24, 2018</time>
+            <h1 class="catalogue-title">독하게시작하는c프로그래밍</h1>
+            <div class="catalogue-line"></div>
+            <p>
+                제1장 c프로그래밍 입문 오류해결 사례 f7키를 통해서 빌드할 때 아래와 같은 에러 발생 c:\apiexam\firsts\firsts\firsts.cpp(46): fatal error C1010: 미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. ‘#include “StdAfx.h”‘을(를) 소스에...
+            </p>
+        </div>
+    </a>
+    
+    <a href="/2018-03-23/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84" class="catalogue-item">
+        <div>
+            <time datetime="2018-03-23 00:00:00 +0000" class="catalogue-time">March 23, 2018</time>
+            <h1 class="catalogue-title">기술면접준비</h1>
+            <div class="catalogue-line"></div>
+            <p>
+                Intro 면접을 위해 따로 공부하는 것 보다는, 열심히 공부한 내용을 바탕으로 면접에서 내 능력을 잘 보여주는 것을 더 선호한다. 면접을 위한 공부가 취업 말고는 무슨 필요가 있겠냐는 생각을 가지고 있었다....
+            </p>
+        </div>
+    </a>
+    
+    <a href="/2018-03-23/PROJECT-SANGSANG" class="catalogue-item">
+        <div>
+            <time datetime="2018-03-23 00:00:00 +0000" class="catalogue-time">March 23, 2018</time>
+            <h1 class="catalogue-title">Project Sangsang</h1>
+            <div class="catalogue-line"></div>
+            <p>
+                작은방 미술 교습소 ‘상상’ 홈페이지를 만들며 남긴 기록입니다. 진행사항에 대한 기록 mdb free로 적용 안되는 기술 중 하나가 smmoth scroll, 대신에 w3s에서 알려주는 방법을 적용하면 됨 찾아보지 않고도 기억하고 싶은...
+            </p>
+        </div>
+    </a>
+    
+    <a href="/2018-03-23/PROJECT-NEWS-COLLECTER" class="catalogue-item">
+        <div>
+            <time datetime="2018-03-23 00:00:00 +0000" class="catalogue-time">March 23, 2018</time>
+            <h1 class="catalogue-title">Project News Collecter</h1>
+            <div class="catalogue-line"></div>
+            <p>
+                나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다. Custom Homepage Project www.news-collecter.com 홈페이지로 쓰고자 직접 제작한 웹사이트 입니다. 주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는...
+            </p>
+        </div>
+    </a>
+    
+    <a href="/2018-03-23/PROJECT-EXPLOG" class="catalogue-item">
+        <div>
+            <time datetime="2018-03-23 00:00:00 +0000" class="catalogue-time">March 23, 2018</time>
+            <h1 class="catalogue-title">Project Explog</h1>
+            <div class="catalogue-line"></div>
+            <p>
+                나의 여행기 기록 SNS EXPLOG를 개발하며 기록해 놓은 자료입니다. 11-21 화요일 서버 사전세팅관련 도커만들기 postgresql rds 연결 boto3 s3연결 11-22 수요일 installed apps에 corsheaders 추가하고 사용하는 것 확인해보기 다른 도메인에서...
+            </p>
+        </div>
+    </a>
+    
 </div>
 
 <div class="pagination">
-    {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-    {% endif %}
-    {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
-    {% endif %}
+    
+    
+        <a href="/record/page2/" class="right arrow">&#8594;</a>
+    
 
-    <span>{{ paginator.page }}</span>
+    <span>1</span>
 </div>
+    </main>
+
+    <footer>
+  <span>
+    &copy; <time datetime="2020-02-25 22:41:48 +0000">2020</time> . Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+  </span>
+</footer>
+
+  </body>
+</html>

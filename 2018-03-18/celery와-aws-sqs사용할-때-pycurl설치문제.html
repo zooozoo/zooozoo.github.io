@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>celery와 aws sqs사용할 때 pycurl설치문제 | HOME</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="celery와 aws sqs사용할 때 pycurl설치문제" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="celery와 sqs를 연결하여 사용할 때 pycurl을 설치할 때 발생한 문제와 해결책에 대한 내용입니다." />
+<meta property="og:description" content="celery와 sqs를 연결하여 사용할 때 pycurl을 설치할 때 발생한 문제와 해결책에 대한 내용입니다." />
+<link rel="canonical" href="/2018-03-18/celery%EC%99%80-aws-sqs%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-pycurl%EC%84%A4%EC%B9%98%EB%AC%B8%EC%A0%9C" />
+<meta property="og:url" content="/2018-03-18/celery%EC%99%80-aws-sqs%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-pycurl%EC%84%A4%EC%B9%98%EB%AC%B8%EC%A0%9C" />
+<meta property="og:site_name" content="HOME" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-18T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"celery와 sqs를 연결하여 사용할 때 pycurl을 설치할 때 발생한 문제와 해결책에 대한 내용입니다.","@type":"BlogPosting","url":"/2018-03-18/celery%EC%99%80-aws-sqs%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-pycurl%EC%84%A4%EC%B9%98%EB%AC%B8%EC%A0%9C","headline":"celery와 aws sqs사용할 때 pycurl설치문제","dateModified":"2018-03-18T00:00:00+00:00","datePublished":"2018-03-18T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2018-03-18/celery%EC%99%80-aws-sqs%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-pycurl%EC%84%A4%EC%B9%98%EB%AC%B8%EC%A0%9C"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="HOME" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">HOME</h2>
+    </a>
+    <ul>
+      <li><a href="/post/">POSTS</a></li>
+      <li><a href="/record/">RECORDS</a></li>
+      <li><a href="/tis/">TIS</a></li>
+      <li><a href="/about">ABOUT</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2018-03-18 00:00:00 +0000">March 18, 2018</time>
+    
+  </div>
+
+  <h1 class="post-title">celery와 aws sqs사용할 때 pycurl설치문제</h1>
+  <div class="post-line"></div>
+
+  <p>celery 를 sqs와 함께 사용하기 위한 전반적인 내용은 아래 url에 내용이 설명되어 있다.
+<a href="http://docs.celeryproject.org/en/latest/getting-started/brokers/sqs.html">celery 공식문서</a></p>
+
+<p>celery와 sqs를 연결하면서 해결했던 몇가지 문제들을 기록해 둔다.(비록 간단한 문제들이지만)</p>
+
+<ol>
+  <li>broker url 만들기
+  처음 broker url을 만들 때, json파일로 만들어져 있는 <code class="highlighter-rouge">access id</code>와 <code class="highlighter-rouge">secret key</code>를
+  아래와 같이 가져와 broker url을 만들고 celery를 실행했는데 <code class="highlighter-rouge">ValueError: invalid literal for int() with base 10: '2kDlXtkl9pGy2vxgJOcrLhsGMU4dKzpAzw'</code>라는 에러가 났다.
+  ```
+  AWS_ACCESS_KEY_ID = config_secret_common[‘aws’][‘AWS_ACCESS_KEY_ID’]
+  AWS_SECRET_ACCESS_KEY = config_secret_common[‘aws’][‘AWS_SECRET_ACCESS_KEY’]</li>
+</ol>
+
+<p>CELERY_BROKER_URL = f”sqs://{AWS_ACCESS_KEY_ID}:{AWS_SECRET_ACCESS_KEY}@”</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  에러내용을 바탕으로 해결책을 찾았는데 다해결하고 난 다음에야 들어온 문서내용
+
+  &gt; If you specify AWS credentials in the broker URL, then please keep in mind that
+  &gt; the secret access key may contain unsafe characters that need to be URL encoded.
+
+  사실 먼저 읽었던 내용이었는데 그때는 이게 무슨말인지 잘 몰랐었다. 어쨌건 검색을 통해 아래와 같이
+  broker url을 구성해 문제를 해결 할 수 있었다.
+  (stackoverflow에서 찾았는데 url을 잃어버렸다... 에러내용을 그대로 복붙해서 찾아냈다.)
+  ```python
+  AWS_ACCESS_KEY_ID = config_secret_common['aws']['AWS_ACCESS_KEY_ID']
+  AWS_SECRET_ACCESS_KEY = config_secret_common['aws']['AWS_SECRET_ACCESS_KEY']
+  aws_access_key_id = urllib.parse.quote(f'{AWS_ACCESS_KEY_ID}', safe='')
+  aws_secret_access_key = urllib.parse.quote(f'{AWS_SECRET_ACCESS_KEY}', safe='')
+
+  CELERY_BROKER_URL = f"sqs://{aws_access_key_id}:{aws_secret_access_key}@"
+</code></pre></div></div>
+<p>url용 문자로 인코딩 하기 위하여 모듈을 활용해 인코딩을 새로 해주는 것으로 이해
+  <a href="https://docs.python.org/3/library/urllib.parse.html#url-quoting">URL Quoting, python 문서</a></p>
+
+<ol>
+  <li><code class="highlighter-rouge">pycurl</code>설치하기
+  1번을 마친 후 다시 실행하면 <code class="highlighter-rouge">Unrecoverable error: ImportError('The curl client requires the pycurl library.',)</code>이런 에러가 나온다.
+  그래서 <code class="highlighter-rouge">pycurl</code>을 <code class="highlighter-rouge">pip install pycurl</code>명령어를 실행하면 <code class="highlighter-rouge">__main__.ConfigurationError: Could not run curl-config: [Errno 2] No such file or directory</code>와 같은 에러가 난다.</li>
+</ol>
+
+<p>google신 검색결과 <a href="https://stackoverflow.com/questions/23937933/could-not-run-curl-config-errno-2-no-such-file-or-directory-when-installing">pycurl 설치관련 stackoverflow 답변</a>을 얻었다.</p>
+
+<p>결론은 <code class="highlighter-rouge">sudo apt-get install libcurl4-openssl-dev</code> 명령어로 <code class="highlighter-rouge">libcurl4-openssl-dev</code>를 설치해 주고 <code class="highlighter-rouge">pip install pycurl</code>로 <code class="highlighter-rouge">pycurl</code>을 설치하면 된다.</p>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/2018-03-18/%ED%95%98%EB%A3%A83%EB%B6%84-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B5%90%EC%8B%A4-%EB%A6%AC%EB%B7%B0" class="left arrow">&#8592;</a>
+  
+  
+    <a href="/2018-03-03/if-__name__-==-__main__-%EC%9D%98%EB%AF%B8" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+  <span>
+    &copy; <time datetime="2020-02-25 22:41:48 +0000">2020</time> . Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+  </span>
+</footer>
+
+  </body>
+</html>

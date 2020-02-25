@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>URL과 URI | HOME</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="URL과 URI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="그림으로 배우는 http &amp; network basic을 공부하다가 URL과 URI에 대한 이야기가 나와서 해당 내용에 대한 정확한 개념을 잡고 기록으로 남겨놓으려 한다. (물론 구글에 치면 진짜 잘나온다…)" />
+<meta property="og:description" content="그림으로 배우는 http &amp; network basic을 공부하다가 URL과 URI에 대한 이야기가 나와서 해당 내용에 대한 정확한 개념을 잡고 기록으로 남겨놓으려 한다. (물론 구글에 치면 진짜 잘나온다…)" />
+<link rel="canonical" href="/2018-03-03/URL%EA%B3%BCURI" />
+<meta property="og:url" content="/2018-03-03/URL%EA%B3%BCURI" />
+<meta property="og:site_name" content="HOME" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-03T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"그림으로 배우는 http &amp; network basic을 공부하다가 URL과 URI에 대한 이야기가 나와서 해당 내용에 대한 정확한 개념을 잡고 기록으로 남겨놓으려 한다. (물론 구글에 치면 진짜 잘나온다…)","@type":"BlogPosting","url":"/2018-03-03/URL%EA%B3%BCURI","headline":"URL과 URI","dateModified":"2018-03-03T00:00:00+00:00","datePublished":"2018-03-03T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2018-03-03/URL%EA%B3%BCURI"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="HOME" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">HOME</h2>
+    </a>
+    <ul>
+      <li><a href="/post/">POSTS</a></li>
+      <li><a href="/record/">RECORDS</a></li>
+      <li><a href="/tis/">TIS</a></li>
+      <li><a href="/about">ABOUT</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2018-03-03 00:00:00 +0000">March 03, 2018</time>
+    
+  </div>
+
+  <h1 class="post-title">URL과 URI</h1>
+  <div class="post-line"></div>
+
+  <h1 id="url과-uri">URL과 URI</h1>
+
+<p><code class="highlighter-rouge">그림으로 배우는 http &amp; network basic</code>을 공부하다가 URL과 URI에 대한 이야기가 나와서 해당 내용에 대한 정확한 개념을 잡고 기록으로 남겨놓으려 한다. (물론 구글에 치면 진짜 잘나온다…)</p>
+
+<p>먼저 무엇에 대한 약자인지 알아봅시다.</p>
+
+<ul>
+  <li>URL - Uniform Resource Locator</li>
+  <li>URI - Uniform Resource Identifier</li>
+</ul>
+
+<p>문자 그대로 해석해 보자면 URL은 “정형화된 리소스 위치표시” 라고 할 수 있고, URI는 “젖형화된 리소스 식별자”라고 할 수 있겠다.</p>
+
+<p>먼저 위키백과에 URI를 검색하면 아래와 같이 나온다.</p>
+
+<blockquote>
+  <p><strong>통합 자원 식별자</strong>(Uniform Resource Identifier, <strong>URI</strong>)는 인터넷에 있는 자원을 나타내는 유일한 주소이다. URI의 존재는 인터넷에서 요구되는 기본조건으로서 인터넷 프로토콜에 항상 붙어 다닌다.</p>
+
+  <p>역사</p>
+
+  <p>URI와 URL은 역사를 함께 공유한다. 1994년 <a href="https://ko.wikipedia.org/wiki/%ED%8C%80_%EB%B2%84%EB%84%88%EC%8A%A4_%EB%A6%AC">팀 버너스 리</a>가 <a href="https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%ED%85%8D%EC%8A%A4%ED%8A%B8">하이퍼텍스트</a>[<a href="https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90#cite_note-FOOTNOTEPalmer2001-1">1]</a>를 제안하면서 <a href="https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%A7%81%ED%81%AC">하이퍼링크</a>의 대상이 되는 자원을 대표하는 짧은 문자열로 URL의 개념을 암묵적으로 도입하였다. 당시 사람들은 이를 “하이퍼텍스트 이름”[<a href="https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90#cite_note-FOOTNOTEW3C1992-2">2]</a> 또는 “문서 이름”으로 불렀다.</p>
+</blockquote>
+
+<p>큰 의미로 보자면 그게 그말이다.</p>
+
+<p>URI가 가장 상위집합이라고 할 수 있고 그 안에 URL이나 URN과 같은 개념이 있다고 생각하면 되겠다.</p>
+
+<p>의미상으로도 리소스의 위치를표시하는 것의 목적이 결국엔 리소스를 식별해 나가는 것이므로 단어의 해석만으로도 관련내용을 이해할 수 있다.</p>
+
+<p>조금만 더 자세히 들어가자면 이전에는 URL이 가리키는게 파일 리소스 였는데, 요즘은 Rewrite 등의 Apache , IIS, Tomcat 핸들러 때문에 이를 자원 이라고 부른다. (여기부터 조금 잘 모르는 내용이긴 한데 Apache를 비롯한 웹서버가 생겨나면서 부터 파일 리소스가 -&gt; 자원의 개념으로 다뤄졌던 것 같다.)</p>
+
+<p>이전에는 요청하는 주소가 실제의 파일이나 폴더트리였다면 요즘은 그냥 해당 자원을 가리키는 구분자로서의 역할을 한다는 것.</p>
+
+<p>알고보면 그렇게 어렵거나 한 개념은 아니지만 웹 기술의 발전이 어떻게 이루어 졌는지에 대한 한 조각을 할 수 있는 부분인 것 같다.</p>
+
+<p>(참고한 글)</p>
+
+<p><a href="https://blog.lael.be/post/61">https://blog.lael.be/post/61</a></p>
+
+<p><a href="https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90">위키백과</a></p>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/2018-03-03/if-__name__-==-__main__-%EC%9D%98%EB%AF%B8" class="left arrow">&#8592;</a>
+  
+  
+    <a href="/2018-01-24/Django_Spanning-multi-valued-relationships" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+  <span>
+    &copy; <time datetime="2020-02-25 22:41:48 +0000">2020</time> . Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+  </span>
+</footer>
+
+  </body>
+</html>
